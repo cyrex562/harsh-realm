@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../harsh-realm-py/flask-app"
+		}
+	],
+	"settings": {}
+}
