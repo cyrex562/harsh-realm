@@ -1,0 +1,24 @@
+<!-- templates/home.html -->
+{% extends "base.html" %}
+{% block title %}Roll Dice{% endblock title %}
+
+{% block content %}
+    <div id="roll_dice">
+    <h1>Roll Dice</h1>
+    <form hx-post="/roll_dice" hx-target="#roll_dice" hx-indicator=".htmx-indicator">
+        <div class="form-group">
+            <label for="num_dice">Number of Dice</label>
+            <input type="number" name="num_dice" class="form-control" value="{{ num_dice }}">
+        </div>
+        <div class="form-group">
+            <label for="num_sides">Number of Sides</label>
+            <input type="number" name="num_sides" class="form-control" value="{{ num_sides }}">
+        </div>
+        <button class="btn btn-default" type="submit">Submit</button>
+    </form>
+    <div id="roll_dice_results">
+        <p>results</p>
+       <p>{{ rolls }}</p>
+    </div>
+    </div>
+{% endblock content %}

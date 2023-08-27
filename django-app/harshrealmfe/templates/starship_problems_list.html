@@ -1,0 +1,51 @@
+<div id="starship-problems"
+     hx-target="this"
+     hx-swap="outerHTML">
+    <table class="table table-striped table-hover table-sm">
+        <thead>
+        <tr>
+            <th>Dice Roll</th>
+            <th>Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input id="first-input" class="form-new" name="dice_roll" autofocus type="number" maxlength="10"
+                       minlength="1" size="5"/></td>
+            <td><textarea class="form-new" name="description" cols="40" rows="10" autocomplete="on" autocorrect="on"
+                          spellcheck="true"></textarea></td>
+            <td>
+                <button class="btn btn-success" hx-post="{% url 'harshrealmfe:create_starship_problem' %}"
+                        hx-include=".form-new">Create
+                </button>
+            </td>
+        </tr>
+        {% for starship_problem in starship_problems %}
+            <tr>
+                <td><input class="form-{{ starship_problem.id }}" name="dice_roll"
+                           value="{{ starship_problem.dice_roll }}" type="number" maxlength="10" minlength="1"
+                           size="5"/></td>
+                <td><textarea class="form-{{ starship_problem.id }}" name="description" cols="40" rows="10"
+                              autocomplete="on" autocorrect="on"
+                              spellcheck="true">{{ starship_problem.description }}</textarea></td>
+                <td>
+                    <button class="btn btn-secondary" type="button"
+                            hx-post="{% url 'harshrealmfe:update_starship_problem' starship_problem.id %}"
+                            hx-include=".form-{{ starship_problem.id }}">Update
+                    </button>
+                    <button class="btn btn-danger" type="button"
+                            hx-delete="{% url 'harshrealmfe:delete_starship_problem' starship_problem.id %}">Delete
+                    </button>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+<script>
+    htmx.onLoad(function (elt) {
+        console.log('focusing on first input');
+        var first_input = htmx.find(elt, "#first-input");
+        first_input.focus();
+    });
+</script>

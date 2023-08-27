@@ -1,0 +1,649 @@
+ships:
+  - 1:
+    name: wind walker
+    notes:
+      - right side destroyed
+      - canopy crushed
+      - confusing debris field suggests sabotage
+  - 2:
+    name: the heart of hope
+    notes:
+      - heavily damaged
+      - fuel salvageable
+      - weapons systems are operational
+      - cargo holds full
+  - 3:
+    name: maverick
+    notes:
+      - no live systems
+      - hull intact
+      - evidence of soft landing
+      - only surface damage
+      - fixable
+  - 4:
+    name: serenity
+    notes:
+      - critical parts are in working order
+      - power and propulsion systems intact
+      - will not withstand a jump
+      - no distress beacon
+  - 5:
+    name: last resort
+    notes:
+      - damaged hull
+      - exhaust port of right engine destroyed
+      - enginb ay sealed off by debris
+      - fuel still in tanks
+  - 6:
+    name: mermaid
+    notes:
+      - appears operational
+      - nothing wrong with engines
+      - cargo bay sealed and frozen solid
+  - 7:
+    name: blitz sarge
+    notes:
+      - bridge destroyed
+      - ship otherwise undamaged
+      - cargo hold contained weapons but mostly emptied
+  - 8:
+    name: coastline racer
+    notes:
+      - damage to atmospheric stabilizers
+      - nav controls operational
+      - fuel tanks intact
+      - power core destroyed
+      - weapons removed
+  - 9:
+    name: nimitz
+    notes:
+      - cargo airlocks destroyed
+      - main computer core appears to be damaged
+      - life support in good shape
+  - 10:
+    name: star forge
+    notes:
+      - no damage to hull
+      - core and power pack intact
+      - low chance of explosion
+  - 11:
+    name: dark polaris
+    notes:
+      - unexplained fire started in the engine room
+      - crew missing
+      - life support offline
+      - structure in good shape
+  - 12:
+    name: blade
+    notes:
+      - skimmer
+      - damaged beyond repair
+      - engines in good shape
+      - fuel salvageable
+  - 13:
+    name: juggernaut
+    notes:
+      - bridge destroyed
+      - cooling system likely damaged
+      - huge cargo bay contians a pair of armored mechs
+  - 14:
+    name: fury
+    notes:
+      - left side of hull is severly damaged
+      - evidence of unexplained explosion
+      - cargo bay doors are destroyed
+      - interior visible
+  - 15:
+    name: new lisbon
+    notes:
+      - electronics completely fried
+      - decking blown out
+      - left side of hull has many small holes
+      - limited salvage
+  - 16:
+    name: goldrush
+    notes:
+      - computer and nav systems in good shape
+      - main engines fried
+      - no bodies recovered
+  - 17:
+    name: last row
+    notes:
+      - fuel, cooling system, lights, and power systems all intact
+      - uneaten food stores
+      - looks like it will fly
+  - 18:
+    name: Burrow Rat
+    notes:
+      - Nothing but wreckage
+      - Four armored crates of colony supplies recoverable
+  - 19:
+    name: Hack Attack
+    notes:
+      - Probably grounded for good
+      - Engines are missing, pieces of hull missing
+      - Ancient computer systems
+  - 20:
+    name: Double Dux
+    notes:
+      - Took some hits
+      - Still operational but systems outdated
+      - Crew cabins and galley intact
+  - 21:
+    name: Sabre
+    notes:
+      - Power systems, servers, and computers all fried
+      - No live systems
+      - Cargo held in good condition
+      - Fuel systems not working
+  - 22:
+    name: Golden Guard Frigate
+    notes:
+      - Still under power
+      - Fuel tanks damaged
+      - Recoveerable medical cargo
+      - Decontamination will be a pain
+  - 23:
+    name: Turn it around
+    notes:
+      - Contains a renegade AI, hellbent on erasing the rest of the galaxy, deactiviated
+      - Torpedo launchers remain intact
+  - 24:
+    name: Railgun Attan
+    notes:
+      - In working order
+      - Engines have no thrust
+      - Computer scrambled, unable to override existing control logic
+      - No communications systems
+  - 25:
+    name: The Storm
+    notes:
+      - Aft section completely ripped open
+      - Upper and lower cargo bay filled with debris
+  - 26:
+    name: Qaadirah
+    notes:
+      - Broken but largely intact
+      - Engines damaged
+      - Ship operational but likely wont hold atmosphere
+  - 27:
+    name: Zodiac V
+    notes:
+      - Life support systems damaged but functioning
+      - Engines working
+      - No power to bridge
+  - 28:
+    name: Have Your Cake and Eat it Too
+    notes:
+      - Entire ship is intact
+      - Frame severely bent
+      - Carbon freeze cotaing on hull that blocks most scanning equipment
+      - Unknown contents
+  - 29:
+    name: Li Fang-Long
+    notes:
+      - Undamaged but a little underpowered
+      - Cargo bays are still intact
+      - Fuel stores still usable but low quality
+  - 30:
+    name: Friendly Assassin
+    notes:
+      - Computer functional but AI nav controller in bad shape
+      - Losing life support
+      - Not habitable for long
+  - 31:
+    name: Deadman's Run
+    notes:
+      - Fuel cargo shot through by cannon
+      - Core systems still functional
+      - Missile launchers in excellent condition
+  - 32:
+    name: Operation Scorpio
+    notes:
+      - intact
+      - Dock platform operational
+      - Power pack removable
+      - Other systems completely broken and require an overhaul
+  - 33:
+    name: Beta Max
+    notes:
+      - Unknown catastrophic failure
+      - Hard surface damaged on hull
+      - Computer core damaged, storage in good shape
+  - 34:
+    name: Lodestar
+    notes:
+      - Engines damaged by explosion
+      - Stuffed with post-war medical supplies
+      - Life support appears intact
+      - Computer and power system in decent shape
+  - 35:
+    name: Doombringer
+    notes:
+      - Massive hull breach and explosive decompression
+      - Structural integrity very low
+      - Unknown cargo on board
+  - 36:
+    name: Night Treasure
+    notes:
+      - Radiation levels high, but not lethal
+      - Fuel tanks intact but highly contaminated
+      - Crew quarters contain personal effects, untouched
+  - 37:
+    name: Star fire
+    notes:
+      - Damage to hull extensive
+      - No life support or environmental monitoring
+      - Weapons and ammunition destroyed
+      - Power and data systems functional
+  - 38:
+    name: Dock Rat
+    notes:
+      - Broken up, some spare parts intact
+      - Weapon control systems have been removed
+      - Sizeable, but empty cargo hold
+  - 39:
+    name: Bird of Prey
+    notes:
+      - Evidence of radiation damage
+      - Oxygen tanks empty and scrubbers offline
+      - Wreckage includes strange metal cube
+  - 40:
+    name: Reloads from Outer Space
+    notes:
+      - No visible damage to hull
+      - Fuel and power systems no longer functional
+      - Vault contains stolen items, including weapons and a transport speeder
+  - 41:
+    name: Augustine's luck
+    notes:
+      - Genetic equipment offline, but repairable
+      - One cryopod full
+      - Collection of advanced medical sensors salvageable
+  - 42:
+    name: Rough Cut
+    notes:
+      - Power packs removed
+      - Control panels destroyed
+      - Substantial work required to restore
+  - 43:
+    name: Sunken hope
+    notes:
+      - Jump drive and weapons intact
+      - Lots of ammunition
+      - Computers and life support systems undamaged
+  - 44:
+    name: Lucky Break
+    notes:
+      - Good defensive weapons, easily removable
+      - No cargo
+      - Computer core is a recent model
+  - 45:
+    name: Cry A Reaper
+    notes:
+      - Frame bent but not destroyed
+      - Main engine appears intact
+      - Fusion reactor and life support fully functional
+      - Cargo hold filled with scrap metal
+  - 46:
+    name: Barracuda
+    notes:
+      - No life support systems
+      - Much of the outer hull and interior destroyed
+      - Radiation levels bad but not incapacitating
+      - Data systems recoverable
+  - 47:
+    name: Miniluv
+    notes:
+      - Explosive device obliterated bridge
+      - Computer core damaged
+      - Weapon systems data storage units unsalvageable
+  - 48:
+    name: Wilhem Gustaf
+    notes:
+      - Medical systems under emergency power
+      - Life support compromised
+      - Information backup system Lost
+      - Weapons destroyed
+  - 49:
+    name: Armageddon
+    notes:
+      - Engine room damaged, coolant leaking
+      - High radiation levels
+      - Jump drive housing in good shape
+  - 50:
+    name: Princess of Themoth
+    notes:
+      - Engine room destroyed
+      - Structural integrity good
+      - Science gear and life support functional
+  - 51:
+    name: Warlord's Avenger
+    notes:
+      - Cargo hold full of weapons
+      - One AA Capital Gun functional
+      - Core is intact
+      - Power back, communications still functional
+  - 52:
+    name: Grundy
+    notes:
+      - Fuel leak
+      - Shuttle in good condition, but systems offline
+      - Designed for weapons attachments but none installed
+  - 53:
+    name: Sunrunner
+    notes:
+      - Fuel tanks intact but empty
+      - Engines new and in good condition
+  - 54:
+    name: Eagleheart
+    notes:
+      - Burnt wreck
+      - Shuttles missing
+      - Cargo hold locked; might contain valuables
+  - 55:
+    name: The Tempest
+    notes:
+      - High radiation levels
+      - Ship does not have jump drive
+      - Carries several supply containers
+  - 56:
+    name: Dragonfly
+    notes:
+      - Overally structurally intact
+      - Missing some parts; jump drive and fusion generator gone
+  - 57:
+    name: Evil Thought
+    notes:
+      - Almost in working order
+      - Computer not responding
+      - Weapon systems are operational
+  - 58:
+    name: Isvara Secrets
+    notes:
+      - Former smuggler ship
+      - Cargo bay is picked clean, except for a secret cache
+  - 59:
+    name: Akash
+    notes:
+      - Severe hull fractures
+      - Main engine removed
+      - Cargo hold intact
+      - Loaded with energy weapons and electronics
+  - 60:
+    name: Long March 2
+    notes:
+      - Damage is extensive
+      - Jump drive destroyed
+      - Control unit not viable
+      - Core intact but requires significant repair
+  - 61:
+    name: Rushmore
+    notes:
+      - All life support equipment intact
+      - No signs of damage to drive or docking equipment
+      - Lacks power systems
+  - 62:
+    name: The Meteor
+    notes:
+      - Fission reactor in bad shape
+      - Fuel stores present but leak is severe
+      - Core intact, but requires repair
+  - 63:
+    name: Planetary Biff
+    notes:
+      - Right side of hull is compromised
+      - Main engines intact and do not appear damaged
+      - Salvageable food stores and control systems
+  - 64:
+    name: Kali, the Dreadnought
+    notes:
+      - Shattered
+      - Wreckage scattered across a large swath of space
+      - Carrying a load of military surplus
+  - 65:
+    name: Nemesis
+    notes:
+      - Ship is whole
+      - Jump drive and main power intact
+      - All systems operable
+      - Core damage
+      - Good salvage rates
+  - 66:
+    name: The One That Got Away
+    notes:
+      - Weapon systems online
+      - Life support fully functional
+      - Engines will never run again
+  - 67:
+    name: Javik
+    notes:
+      - Mainframe broken
+      - Some systems operational
+      - Main engine operable
+      - Seems to have no power
+  - 68:
+    name: Caustic
+    notes:
+      - Side ripped open
+      - Main engines operational though damaged
+      - Large cargo hold contains raw chemicals; some missing
+  - 69:
+    name: Rainbow Freedom
+    notes:
+      - Fuel stores detonated
+      - Hull filleted
+      - No atmosphere
+      - Life support control unit in bad shape
+  - 70:
+    name: Swordfish
+    notes:
+      - Bridge badly damaged
+      - Clearly no survivors
+      - Capacitor bank destroyed 
+      - Fuel and power systems in poor shape
+  - 71:
+    name: Four Winds
+    notes:
+      - Right side of hull completely destroyed
+      - Jump drive and control panels destroyed
+      - Armament compartment secured
+  - 72:
+    name: Lord British
+    notes:
+      - Vastly damaged
+      - No live systems
+      - Suffering from radiation damage
+      - Data systems corrupted
+      - Weapon controllers and jump drive systems are dead
+  - 73:
+    name: Vengeful Spirit
+    notes:
+      - Highly advanced and heavily armed
+      - All vital systems activated
+      - Completely abandoned
+      - In great shape
+      - Seems rather curious
+  - 74:
+    name: Unknown vessel
+    notes:
+      - Life support damaged by power spike
+      - Light hum from engines
+      - Weapon systems in good shape but not functional
+  - 75:
+    name: Interstellar Express
+    notes:
+      - Main engine still operational
+      - Cargo bay door jammed open
+      - Likely frozen cargo, unknown contents
+  - 76:
+    name: Knight Errant
+    notes:
+      - Primary combat class
+      - Heavily damaged
+      - Command and nav systems all in bad shape
+      - Power plant is intact
+  - 77:
+    name: Neon Walrus
+    notes:
+      - Ship may be repaired but requires extensive work
+      - Engines most likely destroyed
+      - Fuel gone
+      - Cargo holds full of unrefined metal
+  - 78:
+    name: New hope
+    notes:
+      - Weapon systems not operable
+      - Fusion core unstable
+      - Cargo hold crumpled
+  - 79:
+    name: Spin Doctor
+    notes:
+      - Multiple figheters operational
+      - Extensive damage to launch bay
+      - Engine cooling systems are dead
+      - No fuel
+  - 80:
+    name: Mustang Red
+    notes:
+      - Standard freighter
+      - Filled with parts and components for massive weapon system
+      - No load manifest but something seems missing
+  - 81:
+    name: Sentinel
+    notes:
+      - Nav controls and life support computers online
+      - Unexplained destruction of the decking and interior
+      - Same for the engine room
+  - 82:
+    name: Helethra
+    notes:
+      - Docking bay completely destroyed
+      - Command core and communications systemd destroyed
+      - Weapons may still be good
+  - 83:
+    name: Victory
+    notes:
+      - No life support systems
+      - Hull looks intact
+      - Cargo hold still partially filled with pallets of medical supplies
+      - Evidence of an explosion
+  - 84:
+    name: Stormcaller
+    notes:
+      - Bridge control systems not functioning
+      - Life support systems active
+      - Backup cooling system broken
+      - Unidentified wreckage in the cargo bays
+  - 85:
+    name: Lefty Loosey
+    notes:
+      - Flying shuttle barge
+      - No live systems
+      - Outer hull intact
+      - Fuel holds intact
+      - Good sensor arrays
+  - 86:
+    name: Godbolt
+    notes:
+      - Burnt-out transport
+      - Interior trashed
+      - Nav computer and external sensors functional but damaged
+  - 87:
+    name: Ichi The Killer
+    notes:
+      - Right main engine damaged
+      - Drive still operational
+      - Cargo holds are empty
+      - Entire ship is rigged with explosives
+  - 88:
+    name: Black Op
+    notes:
+      - Completely destroyed
+      - Multiple missile strikes
+      - Looks deliberate
+      - Jump drive, weapons control system, and all data banks destroyed
+      - Cargo holds completely empty
+  - 89:
+    name: Gale Boring
+    notes:
+      - Heavily damaged
+      - Huge opening in the hull
+      - Cant start engine
+      - Cryopod systems operational
+  - 90:
+    name: Pandoran
+    notes:
+      - Light damage
+      - Power and data systems functional
+      - Cargo fo experimental computer computers
+  - 91:
+    name: Haarfjell
+    notes:
+      - Observation deck is destroyed
+      - Cargo bay is cleared
+      - Airlock door missing
+      - Unclear what is salveagable
+  - 92:
+    name: Cloak and Dagger
+    notes:
+      - Advanced jump systems
+      - No fuel
+      - No life support or oxygen on board
+      - Possibly salveagable
+      - Curreupted AI still active
+  - 93:
+    name: Soulbringer
+    notes:
+      - Mobile android repair facility
+      - Data still available but computer is dead
+      - Ship AI is in statis mode until head unti is replaced
+  - 94:
+    name: Global Constellations
+    notes:
+      - Massive explosion in cargo hold
+      - Almost salveagable
+      - Medbay full stocked
+  - 95:
+    name: Boulder Fight
+    notes:
+      - Heavy exterior damage but structurally sound
+      - Engines are not functional
+      - Cargo hold filled with emergency rations
+  - 96:
+    name: Manticore
+    notes:
+      - Power and data systems intact
+      - Survival suits and crew missing
+      - No sign of anyone on board
+      - Holding atmosphere and life support operational
+  - 97:
+    name: Jukebox
+    notes:
+      - Cargo manifest included 20 tons of gold
+      - Scanning computer still active
+      - Advanced transponder and datapath systems are damaged
+      - No life support
+  - 98:
+    name: Roam the veil
+    notes:
+      - Life support system appears to be functional
+      - MOst other systems in good shape but on their last leg
+      - One airlock is damaged
+      - High value cargo on-board
+  - 99:
+    name: The Phoenix
+    notes:
+      - Sturdy construct
+      - Damage to the engine room
+      - Tractor beam appears to be functional
+  - 100:
+    name: Thieves' Luck
+    notes:
+      - Weapons systems, engine, jump drive, fuel, and main power all offline
+      - Forward section heavily damaged
+      - Highly illegal cargo secreted in crew quarters
+
+
+
+

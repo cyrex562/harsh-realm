@@ -1,0 +1,59 @@
+<div id="mercs-for-hire"
+     hx-target="this"
+     hx-swap="outerHTML">
+    <table class="table table-striped table-hover table-sm">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input id="first-input" class="form-new" name="name" autofocus/></td>
+            <td><textarea class="form-new" name="description" cols="40" rows="10" autocomplete="on" autocorrect="on"
+                          spellcheck="true"></textarea></td>
+            <td>
+                <button class="btn btn-success"
+                        hx-post="{% url 'harshrealmfe:create_merc_for_hire' %}"
+                        hx-include=".form-new">
+                    Create
+                </button>
+            </td>
+        </tr>
+        {% for merc_for_hire in mercs_for_hire %}
+            <tr>
+                <td><input type="text"
+                           class="form-{{ merc_for_hire.id }}"
+                           name="name"
+                           value="{{ merc_for_hire.name }}"/>
+                </td>
+                <td><textarea class="form-{{ merc_for_hire.id }}"
+                              name="description" cols="40" rows="10" autocomplete="on" autocorrect="on"
+                              spellcheck="true">{{ merc_for_hire.description }}</textarea>
+                </td>
+                <td>
+                    <button class="btn btn-secondary"
+                            type="button"
+                            hx-post="{% url 'harshrealmfe:update_merc_for_hire' merc_for_hire.id %}"
+                            hx-include=".form-{{ merc_for_hire.id }}">
+                        Update
+                    </button>
+                    <button class="btn btn-danger"
+                            type="button"
+                            hx-delete="{% url 'harshrealmfe:delete_merc_for_hire' merc_for_hire.id %}">
+                        Delete
+                    </button>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+<script>
+    htmx.onLoad(function (elt) {
+        console.log('focusing on first input');
+        var first_input = htmx.find(elt, "#first-input");
+        first_input.focus();
+    });
+</script>

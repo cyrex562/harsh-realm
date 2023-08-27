@@ -1,0 +1,48 @@
+<div id="odd-situations"
+     hx-target="this"
+     hx-swap="outerHTML">
+    <table class="table table-striped table-hover table-sm">
+        <thead>
+        <tr>
+            <th>Dice Roll</th>
+            <th>Cargo</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input id="first-input" class="form-new" name="dice_roll" autofocus type="number" maxlength="10"
+                       minlength="1" size="5"/></td>
+            <td><textarea class="form-new" name="cargo" cols="40" rows="2" autocomplete="on" autocorrect="on"
+                          spellcheck="true"></textarea></td>
+            <td>
+                <button class="btn btn-success" hx-post="{% url 'harshrealmfe:create_banned_cargo' %}"
+                        hx-include=".form-new">Create
+                </button>
+            </td>
+        </tr>
+        {% for banned_cargo in banned_cargoes %}
+            <tr>
+                <td><input class="form-{{ banned_cargo.id }}" name="dice_roll"
+                           value="{{ banned_cargo.dice_roll }}" type="number" maxlength="10"
+                           minlength="1" size="5"/>
+                </td>
+                <td><textarea class="form-{{ banned_cargo.id }}" name="reason" cols="40" rows="2"
+                              autocomplete="on" autocorrect="on"
+                              spellcheck="true">{{ banned_cargo.cargo }}</textarea>
+                </td>
+                <td>
+                    <button class="btn btn-secondary" type="button"
+                            hx-post="{% url 'harshrealmfe:update_banned_cargo' banned_cargo.id %}"
+                            hx-include=".form-{{ banned_cargo.id }}">Update
+                    </button>
+                    <button class="btn btn-danger" type="button"
+                            hx-delete="{% url 'harshrealmfe:delete_banned_cargo' banned_cargo.id %}">
+                        Delete
+                    </button>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>

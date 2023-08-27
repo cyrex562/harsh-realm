@@ -1,0 +1,61 @@
+<div id="useless-items"
+     hx-target="this"
+     hx-swap="outerHTML">
+    <table class="table table-striped table-hover table-sm">
+        <thead>
+        <tr>
+            <th>Dice Roll</th>
+            <th>Item</th>
+            <th>Place</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input id="first-input"
+                       class="form-new"
+                       name="dice_roll"
+                       autofocus
+                       type="number"
+                       maxlength="10"
+                       minlength="1"
+                       size="5"/></td>
+            <td><textarea class="form-new" name="item" cols="40" rows="2" autocomplete="on" autocorrect="on"
+                          spellcheck="true"></textarea></td>
+            <td><input class="form-new"
+                       name="place"
+                       autocomplete="on"/></td>
+            <td>
+                <button class="btn btn-success" hx-post="{% url 'harshrealmfe:create_random_item' %}"
+                        hx-include=".form-new">Create
+                </button>
+            </td>
+        </tr>
+        {% for random_item in random_items %}
+            <tr>
+                <td><input class="form-{{ random_item.id }}" name="dice_roll" value="{{ random_item.dice_roll }}"
+                           type="number" maxlength="10" minlength="1" size="5"/></td>
+                <td><textarea class="form-{{ random_item.id }}" name="item" cols="40" rows="2" autocomplete="on"
+                              autocorrect="on" spellcheck="true">{{ random_item.item }}</textarea></td>
+                <td><input class="form-{{ random_item.id }}" name="place" value="{{ random_item.place }}"/></td>
+                <td>'
+                    <button class="btn btn-secondary" type="button"
+                            hx-post="{% url 'harshrealmfe:update_random_item' random_item.id %}"
+                            hx-include=".form-{{ random_item.id }}">Update
+                    </button>
+                    <button class="btn btn-danger" type="button"
+                            hx-delete="{% url 'harshrealmfe:delete_random_item' random_item.id %}">Delete
+                    </button>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+<script>
+    htmx.onLoad(function (elt) {
+        console.log('focusing on first input');
+        var first_input = htmx.find(elt, "#first-input");
+        first_input.focus();
+    });
+</script>

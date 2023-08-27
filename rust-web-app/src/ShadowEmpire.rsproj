@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files (x86)\Steam\steamapps\common\Shadow Empire\ShadowEmpire.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5065DD0C-A1D3-4B8C-A3B6-631A50A4CFC8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>WindowsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.8020.28903</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PdfSharp">
+      <HintPath>lib\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="irrKlang.NET4">
+      <HintPath>lib\irrKlang.NET4.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DEVMODE1.cs" />
+    <Compile Include="Form1.cs" />
+    <Compile Include="Form2.cs" />
+    <Compile Include="Form3.cs" />
+    <Compile Include="SortListArray.cs" />
+    <Compile Include="ListItem.cs" />
+    <Compile Include="Form4.cs" />
+    <Compile Include="CustomCombatCalls.cs" />
+    <Compile Include="CCMod.cs" />
+    <Compile Include="BattleUnit.cs" />
+    <Compile Include="Individual.cs" />
+    <Compile Include="CombatClass.cs" />
+    <Compile Include="EventRelatedClass.cs" />
+    <Compile Include="HandyFunctionsclass.cs" />
+    <Compile Include="LisRunner.cs" />
+    <Compile Include="ProcessingClass.cs" />
+    <Compile Include="AdviceType.cs" />
+    <Compile Include="IO_ColNr.cs" />
+    <Compile Include="IO_FontNr.cs" />
+    <Compile Include="LogType.cs" />
+    <Compile Include="DecisionType.cs" />
+    <Compile Include="DetailType.cs" />
+    <Compile Include="StringSe1.cs" />
+    <Compile Include="HelperEconomyData.cs" />
+    <Compile Include="PeopleType.cs" />
+    <Compile Include="ActionCardClass.cs" />
+    <Compile Include="AIPlanClass.cs" />
+    <Compile Include="SAClass.cs" />
+    <Compile Include="AreaClass.cs" />
+    <Compile Include="BridgeClass.cs" />
+    <Compile Include="DataClass.cs" />
+    <Compile Include="EventClass.cs" />
+    <Compile Include="CommandClass.cs" />
+    <Compile Include="HistoryStepClass.cs" />
+    <Compile Include="CanProduceItemResult.cs" />
+    <Compile Include="RoleSFResult.cs" />
+    <Compile Include="sCoordinate.cs" />
+    <Compile Include="Coordinate.cs" />
+    <Compile Include="FunctionFeedback.cs" />
+    <Compile Include="DependencyClass.cs" />
+    <Compile Include="ChallengeClass.cs" />
+    <Compile Include="RunningGameClass.cs" />
+    <Compile Include="GfxSheetClass.cs" />
+    <Compile Include="Neighbours.cs" />
+    <Compile Include="NeighboursExtra.cs" />
+    <Compile Include="CombatAnalysis.cs" />
+    <Compile Include="ComplexCoordList.cs" />
+    <Compile Include="CoordList.cs" />
+    <Compile Include="OrderResult.cs" />
+    <Compile Include="SimpleList.cs" />
+    <Compile Include="SimpleStringList.cs" />
+    <Compile Include="UnitList.cs" />
+    <Compile Include="AIUnitList.cs" />
+    <Compile Include="MessageList.cs" />
+    <Compile Include="MapMatrix.cs" />
+    <Compile Include="MapMatrix2.cs" />
+    <Compile Include="MapMatrix2String.cs" />
+    <Compile Include="MapMatrix2Plus6.cs" />
+    <Compile Include="MapMatrix2Boolean.cs" />
+    <Compile Include="MapMatrix2Coordinate.cs" />
+    <Compile Include="ItemList.cs" />
+    <Compile Include="ServerCommandType.cs" />
+    <Compile Include="LoadType.cs" />
+    <Compile Include="ServerStatusType.cs" />
+    <Compile Include="PbemGameSetupPhase.cs" />
+    <Compile Include="ServerRegisterReplyType.cs" />
+    <Compile Include="ServerSerialReplyType.cs" />
+    <Compile Include="ServerAuthReplyType.cs" />
+    <Compile Include="ServerGenericReplyType.cs" />
+    <Compile Include="EditClass.cs" />
+    <Compile Include="HexClass.cs" />
+    <Compile Include="HistoricalUnitClass.cs" />
+    <Compile Include="ItemTypeClass.cs" />
+    <Compile Include="LandscapeTypeClass.cs" />
+    <Compile Include="LocationClass.cs" />
+    <Compile Include="LocationTypeClass.cs" />
+    <Compile Include="MapClass.cs" />
+    <Compile Include="MasterLogClass.cs" />
+    <Compile Include="PeopleClass.cs" />
+    <Compile Include="RegimeClass.cs" />
+    <Compile Include="ResearchClass.cs" />
+    <Compile Include="RiverTypeClass.cs" />
+    <Compile Include="RoadTypeClass.cs" />
+    <Compile Include="SFClass.cs" />
+    <Compile Include="SFTypeClass.cs" />
+    <Compile Include="StringListClass.cs" />
+    <Compile Include="UnitClass.cs" />
+    <Compile Include="DC2AIClass.cs" />
+    <Compile Include="AIMatrix.cs" />
+    <Compile Include="AICoordinateMatrix.cs" />
+    <Compile Include="AIFrontList.cs" />
+    <Compile Include="AIFront.cs" />
+    <Compile Include="PassHexList.cs" />
+    <Compile Include="AIMoveList.cs" />
+    <Compile Include="AIMove.cs" />
+    <Compile Include="AIWorld.cs" />
+    <Compile Include="CustomDC2AICalls.cs" />
+    <Compile Include="Shadow_Economic_AI.cs" />
+    <Compile Include="Pool.cs" />
+    <Compile Include="Item.cs" />
+    <Compile Include="Asset.cs" />
+    <Compile Include="AITheater.cs" />
+    <Compile Include="Shadow_Minor.cs" />
+    <Compile Include="Shadow_MinorAntAI.cs" />
+    <Compile Include="ANTSUBGROUP.cs" />
+    <Compile Include="Shadow_Strategic_AI.cs" />
+    <Compile Include="GameClassSmall.cs" />
+    <Compile Include="GameClass.cs" />
+    <Compile Include="NewAIClass.cs" />
+    <Compile Include="LibIdClass.cs" />
+    <Compile Include="LibraryClass.cs" />
+    <Compile Include="LibVarClass.cs" />
+    <Compile Include="NewEnums.cs" />
+    <Compile Include="AIClass.cs" />
+    <Compile Include="SimpleByteCache.cs" />
+    <Compile Include="BitmapStore.cs" />
+    <Compile Include="HexHeightMapData.cs" />
+    <Compile Include="BLENDFUNCTION.cs" />
+    <Compile Include="DrawMod.cs" />
+    <Compile Include="CustomBitmapClass.cs" />
+    <Compile Include="SoundMod.cs" />
+    <Compile Include="CinematicsScreenClass.cs" />
+    <Compile Include="FirstScreenClass2.cs" />
+    <Compile Include="HistoryScreenClass2.cs" />
+    <Compile Include="MessagePopUpScreenClass2.cs" />
+    <Compile Include="PlayScreenClass2.cs" />
+    <Compile Include="RandomScreenClass2.cs" />
+    <Compile Include="SFScreenClass2.cs" />
+    <Compile Include="SimpleEditScreenClass.cs" />
+    <Compile Include="SimpleHisScreenClass.cs" />
+    <Compile Include="SimpleMapScreenClass.cs" />
+    <Compile Include="SimpleOfficerScreenClass.cs" />
+    <Compile Include="SimpleTroopTypeScreenClass.cs" />
+    <Compile Include="CombatScreenClass.cs" />
+    <Compile Include="EventScreenClass.cs" />
+    <Compile Include="FirstScreenClass.cs" />
+    <Compile Include="GameLoopScreenClass.cs" />
+    <Compile Include="HistoryScreenClass.cs" />
+    <Compile Include="MainEditScreenClass.cs" />
+    <Compile Include="MessagePopUpScreenClass.cs" />
+    <Compile Include="PlayScreenClass.cs" />
+    <Compile Include="SFScreenClass.cs" />
+    <Compile Include="StatsScreenClass.cs" />
+    <Compile Include="ScreenClass.cs" />
+    <Compile Include="ScreenReturnClass.cs" />
+    <Compile Include="DynamicCinematicsScreenClass.cs" />
+    <Compile Include="GameLoopScreenClass2.cs" />
+    <Compile Include="ManagementScreenClass.cs" />
+    <Compile Include="SS_ScreenClass.cs" />
+    <Compile Include="BigListSubPartClass.cs" />
+    <Compile Include="DynamicArea.cs" />
+    <Compile Include="DynamicType.cs" />
+    <Compile Include="DynamicDataElement.cs" />
+    <Compile Include="DynamicData.cs" />
+    <Compile Include="GraphClass.cs" />
+    <Compile Include="HexInfoSubPartClass.cs" />
+    <Compile Include="InputTextClass.cs" />
+    <Compile Include="ListSubPartClass.cs" />
+    <Compile Include="ListClass.cs" />
+    <Compile Include="MarcRadioPartClass.cs" />
+    <Compile Include="MarcRadioPartClass2.cs" />
+    <Compile Include="SteveRadioPartClass.cs" />
+    <Compile Include="TextAreaClass2.cs" />
+    <Compile Include="UDSMatrixSubPartClass.cs" />
+    <Compile Include="UDSPartClass.cs" />
+    <Compile Include="UDSType.cs" />
+    <Compile Include="UDSElement.cs" />
+    <Compile Include="UDSData.cs" />
+    <Compile Include="ATHexSubPartClass.cs" />
+    <Compile Include="ATListSubPartClass.cs" />
+    <Compile Include="ATListClass.cs" />
+    <Compile Include="ButtonPartClass.cs" />
+    <Compile Include="SFButtonPartClass.cs" />
+    <Compile Include="SteveButtonPartClass.cs" />
+    <Compile Include="SteveButtonPartClass30.cs" />
+    <Compile Include="SteveButtonPartClass30b.cs" />
+    <Compile Include="SteveButtonPartClass25.cs" />
+    <Compile Include="MarcButtonPartClass.cs" />
+    <Compile Include="CircleButtonPartClass.cs" />
+    <Compile Include="PlainTextButtonPartClass.cs" />
+    <Compile Include="MarcButtonFlexPartClass.cs" />
+    <Compile Include="SimpleButtonPartClass.cs" />
+    <Compile Include="TextButtonPartClass.cs" />
+    <Compile Include="TextButtonPartClass2.cs" />
+    <Compile Include="SmallTextButtonPartClass.cs" />
+    <Compile Include="LocInfoSubPartClass.cs" />
+    <Compile Include="DrawHexData.cs" />
+    <Compile Include="MapPartClass.cs" />
+    <Compile Include="MatrixSubPartClass.cs" />
+    <Compile Include="MiniMapPartClass.cs" />
+    <Compile Include="NumberSliderSubPartClassUDS.cs" />
+    <Compile Include="NumberSliderSubPartClass2.cs" />
+    <Compile Include="NumberSliderSubPartClass2wide.cs" />
+    <Compile Include="NumberSliderSubPartClass3.cs" />
+    <Compile Include="OfficerPartClass.cs" />
+    <Compile Include="PaperAreaClass.cs" />
+    <Compile Include="SubPartClass.cs" />
+    <Compile Include="TextAreaClass.cs" />
+    <Compile Include="ATTextPartClass.cs" />
+    <Compile Include="TextPartClass.cs" />
+    <Compile Include="TurnInfoPartClass.cs" />
+    <Compile Include="HeaderPartClass.cs" />
+    <Compile Include="UnitHeaderPartClass.cs" />
+    <Compile Include="UnitHeaderPartClass_Backuo.cs" />
+    <Compile Include="UnitSFPartClass.cs" />
+    <Compile Include="QuickUnitInfoSubPartClass.cs" />
+    <Compile Include="SEButtonPartClass.cs" />
+    <Compile Include="SEButtonPushPartClassWithText.cs" />
+    <Compile Include="SEButtonPartClassWithText.cs" />
+    <Compile Include="SEButtonPushPartClass.cs" />
+    <Compile Include="SEZoneButtonPartClass.cs" />
+    <Compile Include="SEUnitButtonPartClass.cs" />
+    <Compile Include="SEBigTextPartClass.cs" />
+    <Compile Include="SEUnitBigButtonPartClass.cs" />
+    <Compile Include="SEZoneButtonShortPartClass.cs" />
+    <Compile Include="ActionCardWindowClass.cs" />
+    <Compile Include="BridgeWindowClass.cs" />
+    <Compile Include="ConnectionWindowClass.cs" />
+    <Compile Include="EditHisWindowClass.cs" />
+    <Compile Include="EditOptionsWindowClass.cs" />
+    <Compile Include="EditorPaintWindowClass.cs" />
+    <Compile Include="EditUnitWindowClass.cs" />
+    <Compile Include="EventWindowClass.cs" />
+    <Compile Include="GeneralWindowClass.cs" />
+    <Compile Include="ItemTypeWindowClass.cs" />
+    <Compile Include="LandscapeTypeWindowClass.cs" />
+    <Compile Include="LibraryWindowClass.cs" />
+    <Compile Include="LocTypeWindowClass.cs" />
+    <Compile Include="LocWindowClass.cs" />
+    <Compile Include="PeopleWindowClass.cs" />
+    <Compile Include="RegimeWindowClass.cs" />
+    <Compile Include="ResearchWindowClass.cs" />
+    <Compile Include="RiverTypeWindowClass.cs" />
+    <Compile Include="RoadTypeWindowClass.cs" />
+    <Compile Include="SFTypeWindowClass.cs" />
+    <Compile Include="StringListWindowClass.cs" />
+    <Compile Include="PlayResearchWindowClass.cs" />
+    <Compile Include="IntroWindowClass2.cs" />
+    <Compile Include="RandomBottomClass.cs" />
+    <Compile Include="RandomTopClass.cs" />
+    <Compile Include="WelcomeWindowClass2.cs" />
+    <Compile Include="CorePbemWindowClass.cs" />
+    <Compile Include="LoginPopup.cs" />
+    <Compile Include="PbemInitializeWindowClass.cs" />
+    <Compile Include="RegisterPopup.cs" />
+    <Compile Include="ServerClass.cs" />
+    <Compile Include="ServerPopup.cs" />
+    <Compile Include="ChangeModelWindowClass2.cs" />
+    <Compile Include="NewUnit2WindowClass2.cs" />
+    <Compile Include="NewUnitWindowClass2.cs" />
+    <Compile Include="OfficerPoolWindowClass2.cs" />
+    <Compile Include="OrderWindowClass2.cs" />
+    <Compile Include="StrategicWindowClass2.cs" />
+    <Compile Include="SupplyLayerWindowClass.cs" />
+    <Compile Include="AirSelectWindowClass.cs" />
+    <Compile Include="ArtSelectWindowClass.cs" />
+    <Compile Include="BattlegroupWindowClass.cs" />
+    <Compile Include="BigMessageWindowClass.cs" />
+    <Compile Include="CombatDetailWindowClass.cs" />
+    <Compile Include="CreditsInfoWindowClass.cs" />
+    <Compile Include="FlexMessageWindowClass.cs" />
+    <Compile Include="FlexCardWindowClass.cs" />
+    <Compile Include="HandCardWindowClass2.cs" />
+    <Compile Include="LandSelectWindowClass.cs" />
+    <Compile Include="LoadWindow.cs" />
+    <Compile Include="LoadClass.cs" />
+    <Compile Include="MapSelectWindowClass2.cs" />
+    <Compile Include="MessageWindowClass2.cs" />
+    <Compile Include="ModLibraryPickerClass.cs" />
+    <Compile Include="SelectUsageMode.cs" />
+    <Compile Include="OfficerInfoWindowClass2.cs" />
+    <Compile Include="SFWindowClass2.cs" />
+    <Compile Include="SFWindowClass3.cs" />
+    <Compile Include="SimplePrefsWindowClass.cs" />
+    <Compile Include="SystemMessageWindowClass.cs" />
+    <Compile Include="TransportWindowClass.cs" />
+    <Compile Include="UDSMessageWindowClass.cs" />
+    <Compile Include="UnitSelectWindowClass2.cs" />
+    <Compile Include="TabBriefingWindowClass2.cs" />
+    <Compile Include="TabHelpWindowClass2.cs" />
+    <Compile Include="TabManagementWindowClass2.cs" />
+    <Compile Include="TabMiniMapWindowClass2.cs" />
+    <Compile Include="TabReportsWindowClass2.cs" />
+    <Compile Include="TabStatsWindowClass2.cs" />
+    <Compile Include="AirSupplyWindowClass.cs" />
+    <Compile Include="ATCombatDetailWindowClass.cs" />
+    <Compile Include="ATCreditsInfoWindowClass.cs" />
+    <Compile Include="ATFlexMessageWindowClass.cs" />
+    <Compile Include="BigMiniMapWindowClass.cs" />
+    <Compile Include="BuildWindowClass.cs" />
+    <Compile Include="ChangeModelWindowClass.cs" />
+    <Compile Include="CombatResultWindowClass.cs" />
+    <Compile Include="CombatStatusWindowClass.cs" />
+    <Compile Include="DipWindowClass.cs" />
+    <Compile Include="GameLoopMainWindowClass.cs" />
+    <Compile Include="HandCardWindowClass.cs" />
+    <Compile Include="HistoryWindowClass.cs" />
+    <Compile Include="InfoWindowClass.cs" />
+    <Compile Include="IntroWindowClass.cs" />
+    <Compile Include="LTWindowClass.cs" />
+    <Compile Include="MapSelectWindowClass.cs" />
+    <Compile Include="MapWindowClass.cs" />
+    <Compile Include="MessageWindowClass.cs" />
+    <Compile Include="ModelDesignerWindowClass.cs" />
+    <Compile Include="NewUnit2WindowClass.cs" />
+    <Compile Include="NewUnitWindowClass.cs" />
+    <Compile Include="OfficerInfoWindowClass.cs" />
+    <Compile Include="OfficerPoolWindowClass.cs" />
+    <Compile Include="OldResearchWindowClass.cs" />
+    <Compile Include="OrderWindowClass.cs" />
+    <Compile Include="PlayExtraWindowClass.cs" />
+    <Compile Include="PlayMainWindowClass.cs" />
+    <Compile Include="PlaySecondMainWindowClass.cs" />
+    <Compile Include="PPLWindowClass.cs" />
+    <Compile Include="PrefsWindowClass.cs" />
+    <Compile Include="ProdFlapWindowClass.cs" />
+    <Compile Include="ProdWindowClass.cs" />
+    <Compile Include="RandomWindowClass.cs" />
+    <Compile Include="ResourceWindowClass.cs" />
+    <Compile Include="SFDesignWindowClass.cs" />
+    <Compile Include="SFWindowClass.cs" />
+    <Compile Include="StatsWindowClass.cs" />
+    <Compile Include="StrategicWindowClass.cs" />
+    <Compile Include="TransferWindowClass.cs" />
+    <Compile Include="UnitSelectWindowClass.cs" />
+    <Compile Include="WelcomeWindowClass.cs" />
+    <Compile Include="AdviceWindow.cs" />
+    <Compile Include="CombatResultWindowClass2.cs" />
+    <Compile Include="CombatSelectWindowClass.cs" />
+    <Compile Include="GameLoopClass2.cs" />
+    <Compile Include="GameLoopMainWindowClass2.cs" />
+    <Compile Include="HistoryOrderWindowClass.cs" />
+    <Compile Include="HistoryWindowClass2.cs" />
+    <Compile Include="LeftSideBar.cs" />
+    <Compile Include="LISTrafficWindowClass.cs" />
+    <Compile Include="MapWindowClass2.cs" />
+    <Compile Include="NonCardSelectWindowClass.cs" />
+    <Compile Include="PlayExtraWindowClass2.cs" />
+    <Compile Include="ResourceWindowClass2.cs" />
+    <Compile Include="RightSideBar.cs" />
+    <Compile Include="SpecialWindowClass1.cs" />
+    <Compile Include="SpecialWindowClass2.cs" />
+    <Compile Include="SpecialWindowClass3.cs" />
+    <Compile Include="SpecialWindowClass4.cs" />
+    <Compile Include="SpecialWindowClass5.cs" />
+    <Compile Include="SpecialWindowClass6.cs" />
+    <Compile Include="SpecialWindowClass7.cs" />
+    <Compile Include="TabCardsWindowClass2.cs" />
+    <Compile Include="TabOOBWindowClass2.cs" />
+    <Compile Include="TabPrefsWindowClass2.cs" />
+    <Compile Include="TabSMapWindowClass2.cs" />
+    <Compile Include="UdsOrderWindowClass.cs" />
+    <Compile Include="UdsUnitOpsWindowClass.cs" />
+    <Compile Include="SimpleEditDashboardWindowClass.cs" />
+    <Compile Include="SimpleEditDebugWindowClass.cs" />
+    <Compile Include="SimpleEditMapOptionsWindowClass.cs" />
+    <Compile Include="SimpleEditMapWindowClass.cs" />
+    <Compile Include="SimpleEditOptionsWindowClass.cs" />
+    <Compile Include="SimpleEditRegimeWindowClass.cs" />
+    <Compile Include="SimpleEditTableWindowClass.cs" />
+    <Compile Include="SimpleEditUnitWindowClass.cs" />
+    <Compile Include="SimpleHisWindowClass.cs" />
+    <Compile Include="SimpleLibImportWindow.cs" />
+    <Compile Include="SimpleLibraryWindowClass.cs" />
+    <Compile Include="SimpleMapDashboardWindowClass.cs" />
+    <Compile Include="SimpleMapImportWindow.cs" />
+    <Compile Include="SimpleMapReplacementsWindowClass.cs" />
+    <Compile Include="SimpleOfficerWindowClass.cs" />
+    <Compile Include="SimpleTroopTypeWindowClass.cs" />
+    <Compile Include="SSMapDashboardWindowClass.cs" />
+    <Compile Include="SSEditOptionsWindowClass.cs" />
+    <Compile Include="SSEventPicsClass.cs" />
+    <Compile Include="SSSmallGfxClass.cs" />
+    <Compile Include="WindowClass.cs" />
+    <Compile Include="WindowReturnClass.cs" />
+    <Compile Include="ImmoveableForm.cs" />
+    <Compile Include="My\MyApplication.cs" />
+    <Compile Include="My\MyComputer.cs" />
+    <Compile Include="My\MyProject.cs" />
+    <Compile Include="My\MySettings.cs" />
+    <Compile Include="My\MySettingsProperty.cs" />
+    <Compile Include="My\Resources\Resources.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx" />
+    <EmbeddedResource Include="Form2.resx" />
+    <EmbeddedResource Include="Form3.resx" />
+    <EmbeddedResource Include="Form4.resx" />
+    <EmbeddedResource Include="Resources.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

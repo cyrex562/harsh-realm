@@ -1,0 +1,61 @@
+<div id="alien-race-names"
+     hx-target="this"
+     hx-swap="outerHtml">
+    <table class="table table-striped table-hover">
+        <thead>
+        <tr>
+            <th>Dice Roll</th>
+            <th>Race Name</th>
+            <th>Action</th>
+        </tr>
+
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <input class="form-new" name="dice_roll" type="number" maxlength="10" minlength="1" size="5"/>
+            </td>
+            <td>
+                <input class="form-new" name="race_name"/>
+            </td>
+            <td>
+                <button
+                        class="btn btn-success"
+                        hx-post="{% url 'harshrealmfe:create_alien_race_name' %}"
+                        hx-include=".form-new"
+                >Create
+                </button>
+            </td>
+        </tr>
+        {% for alien_race_name in alien_race_names %}
+            <tr>
+                <td>
+                    <input type="text"
+                           class="form-{{ alien_race_name.id }}"
+                           name="dice_roll"
+                           value="{{ alien_race_name.dice_roll }}" type="number" maxlength="10" minlength="1" size="5"/>
+                </td>
+                <td>
+                    <input type="text"
+                           class="form-{{ alien_race_name.id }}"
+                           name="race_name"
+                           value="{{ alien_race_name.race_name }}"/>
+                </td>
+                <td>
+                    <button class="btn btn-secondary"
+                            type="button"
+                            hx-post="{% url 'harshrealmfe:update_alien_race_name' alien_race_name.id %}"
+                            hx-include=".form-{{ alien_race_name.id }}">
+                        Update
+                    </button>
+                    <button type="button"
+                            class="btn btn-danger"
+                            hx-delete="{% url 'harshrealmfe:delete_alien_race_name' alien_race_name.id %}">
+                        Delete
+                    </button>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>

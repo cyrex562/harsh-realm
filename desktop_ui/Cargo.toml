@@ -1,0 +1,25 @@
+[package]
+name = "harsh-realm"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ash = "0.37.3"
+env_logger = "0.10.0"
+features = "0.10.0"
+getrandom = { version = "0.2.10", features = ["wasm-bindgen", "js"] }
+hassle-rs = "0.10.0"
+iced = "0.9.0"
+iced_aw = "0.5.2"
+iced_web = "0.4.0"
+libloading = "0.8.0"
+log = "0.4.19"
+rand = "0.8.5"
+regex = "1.9.1"
+tokio = "1.29.1"
+wasm-bindgen = "0.2.87"
+web-sys = { version = "0.3.64", features = ["Document", "Event", "EventTarget", "HtmlElement", "KeyboardEvent", "Location", "Storage", "Node", "Window"] }
+wgpu-hal = { version = "0.17.0", features = ["ash", "libloading", "windows_rs", "vulkan", "d3d12", "dx11", "dx12"] }
+

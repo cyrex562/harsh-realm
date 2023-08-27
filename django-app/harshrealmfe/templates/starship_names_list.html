@@ -1,0 +1,46 @@
+<div id="starship-names"
+     hx-target="this"
+     hx-swap="outerHTML">
+    <table class="table table-striped table-hover table-sm">
+        <thead>
+        <tr>
+            <th>Dice Roll</th>
+            <th>Starship Name</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <input type="number" class="form-new" name="dice_roll" autofocus type="number" maxlength="10"
+                       minlength="1" size="5"/>
+            </td>
+            <td>
+                <input class="form-new" name="name"/>
+            </td>
+            <td>
+                <button class="btn btn-success" hx-post="{% url 'harshrealmfe:create_starship_name' %}"
+                        hx-include=".form-new">Create
+                </button>
+            </td>
+        </tr>
+        {% for starship_name in starship_names %}
+            <tr>
+                <td><input type="number" class="form-{{ starship_name.id }}" name="dice_roll"
+                           value="{{ starship_name.dice_roll }}" type="number" maxlength="10" minlength="1" size="5"/>
+                </td>
+                <td><input class="form-{{ starship_name.id }}" name="name" value="{{ starship_name.name }}"/></td>
+                <td>
+                    <button class="btn btn-secondary" type="button"
+                            hx-post="{% url 'harshrealmfe:update_starship_name' starship_name.id %}"
+                            hx-include=".form-{{ starship_name.id }}">Update
+                    </button>
+                    <button class="btn btn-danger" type="button"
+                            hx-delete="{% url 'harshrealmfe:delete_starship_name' starship_name.id %}">Delete
+                    </button>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>

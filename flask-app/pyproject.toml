@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "harsh_realm"
+version = "0.1.0"
+description = ""
+authors = ["cyrex <cyrex562@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pybullet = "^3.2.5"
+Flask = "^2.2.2"
+Flask-Assets = "^2.0"
+pytailwindcss = "^0.1.4"
+flask-admin = "^1.6.0"
+flask-sqlalchemy = "^3.0.2"
+Flask-Alembic = "^2.0.1"
+Flask-Migrate = "^3.1.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

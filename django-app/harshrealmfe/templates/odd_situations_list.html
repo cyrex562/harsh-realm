@@ -1,0 +1,56 @@
+<div id="odd-situations"
+     hx-target="this"
+     hx-swap="outerHTML">
+    <table class="table table-striped table-hover table-sm">
+        <thead>
+        <tr>
+            <th>Dice Roll</th>
+            <th>Location</th>
+            <th>Situation</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input id="first-input" class="form-new" name="dice_roll" autofocus type="number" maxlength="10"
+                       minlength="1" size="5"/></td>
+            <td><input class="form-new" name="location"/></td>
+            <td><textarea class="form-new" name="situation" cols="40" rows="10" autocomplete="on" autocorrect="on"
+                          spellcheck="true"></textarea></td>
+            <td>
+                <button class="btn btn-success" hx-post="{% url 'harshrealmfe:create_odd_situation' %}"
+                        hx-include=".form-new">Create
+                </button>
+            </td>
+        </tr>
+        {% for odd_situation in odd_situations %}
+            <tr>
+                <td><input class="form-{{ odd_situation.id }}" name="dice_roll" value="{{ odd_situation.dice_roll }}"
+                           type="number" maxlength="10" minlength="1" size="5"/>
+                </td>
+                <td><input class="form-{{ odd_situation.id }}" name="location" value="{{ odd_situation.location }}"/>
+                </td>
+                <td><textarea class="form-{{ odd_situation.id }}" name="situation" cols="40" rows="10" autocomplete="on"
+                              autocorrect="on" spellcheck="true">{{ odd_situation.situation }}</textarea>
+                </td>
+                <td>
+                    <button class="btn btn-secondary" type="button"
+                            hx-post="{% url 'harshrealmfe:update_odd_situation' odd_situation.id %}"
+                            hx-include=".form-{{ odd_situation.id }}">Update
+                    </button>
+                    <button class="btn btn-danger" type="button"
+                            hx-delete="{% url 'harshrealmfe:delete_odd_situation' odd_situation.id %}">Delete
+                    </button>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+<script>
+    htmx.onLoad(function (elt) {
+        console.log('focusing on first input');
+        var first_input = htmx.find(elt, "#first-input");
+        first_input.focus();
+    });
+</script>

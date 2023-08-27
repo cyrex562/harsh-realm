@@ -1,0 +1,6 @@
+[workspace]
+
+members = [
+    "desktop_ui", "web_ui"
+]
+

@@ -1,0 +1,48 @@
+<div id="chat-window"
+     hx-target="this"
+     hx-swap="outerHTML">
+    <hr/>
+    <div id="chat-msg-window">
+        {% for msg in chat_messages %}
+            <div class="chat-message"
+            {% if msg.id|divisibleby:2  %}style="float: left"
+                 {% else %}style="float: right"{% endif %}>
+            >
+            <span class="chat-message-time">{{ msg.created_at }}</span>
+            <span class="chat-message-content">{{ msg.message }}</span>
+            </div>
+            <br/>
+        {% endfor %}
+    </div>
+    <hr/>
+    <div id="chat-form-1">
+        <textarea class="chat-form" name="msg" id="chat-msg-input" cols="60" rows="4" autofocus autocorrect="on"
+                  spellcheck="true" autocomplete="on"
+                  {% if loaded_chat_session is None %}disabled{% endif %}
+        ></textarea>
+        <button class="btn btn-primary chat-form"
+                type="button"
+                hx-post="{% url 'harshrealmfe:receive_chat_msg' %}"
+                hx-include=".chat-form"
+                {% if loaded_chat_session is None %}disabled{% endif %}>
+            Send
+        </button>
+    </div>
+    <div id="session-form-1">
+        <input type="hidden" value="{{ loaded_chat_session.id }}" name="loaded_chat_session_id" class="session-form chat-form"/>
+        <select name="chat_sessions" class="session-form">
+            {% for chat_session in chat_sessions %}
+                <option value="{{ chat_session.id }}"
+                        {% if sel_chat_session is not None and sel_chat_session.id == chat_session.id %}selected{% endif %}>{{ chat_session.name }}</option>
+            {% endfor %}
+        </select>
+        <button class="btn btn-secondary session-form" type="button" hx-post="{% url 'harshrealmfe:load_session' %}"
+                hx-include=".session-form">Load
+        </button>
+        <hr/>
+        <input name="session_name" class="session-form" type="text"/>
+        <button class="btn btn-primary session-form" type="button" hx-post="{% url 'harshrealmfe:create_session' %}"
+                hx-include=".session-form">Create
+        </button>
+    </div>
+</div>

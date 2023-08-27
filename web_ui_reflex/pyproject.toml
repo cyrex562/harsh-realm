@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "web-ui-reflex"
+version = "0.1.0"
+description = ""
+authors = ["cyrex562 <cyrex562@gmail.com>"]
+readme = "README.md"
+packages = [{include = "web_ui_reflex"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+reflex = "^0.2.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

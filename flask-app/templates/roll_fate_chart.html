@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Consult Fate Chart{% endblock title %}
+{% block content %}
+<div id="roll_fate_chart">
+    <h1>Consult Fate Chart</h1>
+    <form hx-post="/roll_fate_chart" hx-target="#roll_fate_chart" hx-indicator=".htmx-indicator">
+        <div class="form-group">
+            <label for="odds_select">Odds</label>
+            <select name="odds" id="odds_select">
+                {% for odd_val in odds_values %}
+                    <option value="{{  odd_val }}" {% if selected_val == odd_val %}selected{% endif %}>{{ odd_val }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="chaos_factor_input">Chaos Factor</label>
+            <input type="number" name="chaos_factor" id="chaos_factor_input" value="{{ chaos_factor }}">
+        </div>
+        <button class="btn btn-default" type="submit">Consult Fate Chart</button>
+    </form>
+    <table>
+        <tr>
+            <td><span>Dice Roll (1d100)</span></td><td><span style="font-weight: bold">{{ dice_roll_val }}</span></td>
+        </tr>
+        <tr>
+            <td><span>Fate Chart Result</span></td><td><span style="font-weight: bold">{{ fate_chart_result }}</span></td>
+        </tr>
+        <tr><td><span>Fat Chart Ranges (X Yes/Yes/X No)</span></td><td><span style="font-weight: bold">{{ exc_yes_range }}/ {{ value_range }}/ {{ exc_no_range }}</span></td></tr>
+    </table>
+</div>
+{% endblock content %}
