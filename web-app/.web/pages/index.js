@@ -37,13 +37,13 @@ export default function Component() {
   <Fragment><Fragment>
   <Container>
   <Box>
-  {state.chat_history.map((mpnrasah, i) => (
+  {state.chat_history.map((yrmqslun, i) => (
   <Box key={i} sx={{"marginY": "1em"}}>
   <Box sx={{"textAlign": "right"}}>
-  {mpnrasah.at(0)}
+  {yrmqslun.at(0)}
 </Box>
   <Box sx={{"textAlign": "left", "whitespace": "break-spaces"}}>
-  {mpnrasah.at(1)}
+  {yrmqslun.at(1)}
 </Box>
 </Box>
 ))}
@@ -63,9 +63,9 @@ export default function Component() {
   {`New Session`}
 </Button>
   <Select onChange={_e => Event([E("state.set_selected_session_name", {value:_e.target.value})], _e)} placeholder={`select a session...`}>
-  {state.session_names.map((rahwrxlf, i) => (
-  <option key={i} value={rahwrxlf}>
-  {rahwrxlf}
+  {state.session_names.map((jarenfjt, i) => (
+  <option key={i} value={jarenfjt}>
+  {jarenfjt}
 </option>
 ))}
 </Select>
@@ -75,6 +75,11 @@ export default function Component() {
   <Button onClick={_e => Event([E("state.delete_selected_session", {})], _e)}>
   {`Delete Selected Session`}
 </Button>
+  <Box>
+  <Text>
+  {`Loaded Session: ${state.loaded_session_name}`}
+</Text>
+</Box>
 </Box>
 </Container>
   <NextHead>

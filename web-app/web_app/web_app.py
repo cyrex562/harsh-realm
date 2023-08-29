@@ -33,7 +33,37 @@ class State(rx.State):
     session_names: list[str]
     selected_session_name: str = ""
     game_sessions: list[GameSession] = []
-    selected_game_session: Optional[GameSession] = None
+    loaded_game_session: Optional[GameSession] = None
+    loaded_session_name: str = "not loaded"
+
+    @rx.var
+    def get_game_sessions(self):
+        print("get game sessions")
+        with rx.session() as session:
+            self.game_sessions = session.query(GameSession).all()
+            return self.game_sessions
+
+    @rx.var
+    def get_session_names(self):
+        print("get session names")
+        with rx.session() as session:
+            self.session_names = [gs.name for gs in session.query(GameSession).all()]
+            return self.session_names
+
+    # def get_loaded_session_name(self) -> str:
+    #     if self.selected_game_session is None:
+    #         return "not loaded"
+    #     return self.selected_game_session.name
+
+    def get_gsession_by_name(self):
+        print("get session by name")
+        with rx.session() as session:
+            gs = (
+                session.query(GameSession)
+                .filter(GameSession.name == self.selected_session_name)
+                .first()
+            )
+            return gs
 
     def answer(self):
         # process question
@@ -55,13 +85,28 @@ class State(rx.State):
 
     def load_selected_session(self):
         print(f"load_selected_session: {self.selected_session_name}")
+        with rx.session() as session:
+            self.loaded_game_session = (
+                session.query(GameSession)
+                .filter(GameSession.name == self.selected_session_name)
+                .first()
+            )
+            self.loaded_session_name = self.loaded_game_session.name
+        print(f"loaded session: {self.loaded_session_name}")
 
     def delete_selected_session(self):
         print(f"delete_selected_session: {self.selected_session_name}")
         self.session_names.remove(self.selected_session_name)
+        # self.sessions.remove(self.selected_game_session)
+        with rx.session() as session:
+            session.query(GameSession).filter(
+                GameSession.name == self.selected_session_name
+            ).delete()
+            session.commit()
+        if self.loaded_session_name == self.selected_session_name:
+            self.loaded_session_name = "not loaded"
         self.selected_session_name = ""
-        self.sessions.remove(self.selected_game_session)
-        self.selected_game_session = None
+        self.loaded_game_session = None
 
 
 def qa(question: str, answer: str) -> rx.Component:
@@ -112,6 +157,7 @@ def session_mgr_ui() -> rx.Component:
             "Delete Selected Session",
             on_click=State.delete_selected_session,
         ),
+        rx.box(rx.text(f"Loaded Session: {State.loaded_session_name}")),
     )
 
 
