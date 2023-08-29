@@ -1,3 +1,5 @@
+from .combat import proc_attack_roll_cmd
+from .skill_check import proc_skill_check_cmd
 from .saving_throw import proc_saving_throw_cmd
 from .text_type import TextType
 from .dice import proc_roll_dice_cmd
@@ -20,6 +22,12 @@ def process_command(raw_command: str) -> TextLine:
         # roll saving throw
         elif roll_cmd.startswith("saving throw"):
             return proc_saving_throw_cmd(roll_cmd)
+        # roll skill check
+        elif roll_cmd.startswith("skill check"):
+            return proc_skill_check_cmd(roll_cmd)
+        # roll attack throw
+        elif roll_cmd.startswith("to hit"):
+            return proc_attack_roll_cmd(roll_cmd)
         # invalid roll command
         else:
             raise ValueError(f'unknown command "{raw_command}"')

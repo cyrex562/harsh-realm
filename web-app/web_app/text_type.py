@@ -2,9 +2,10 @@ import enum
 
 
 class TextType(enum.Enum):
-    NONE=0,
-    COMMAND_INPUT = 1,
-    COMMAND_OUTPUT = 2,
-    HELP = 3,
-    ERROR = 4
-
+    NONE = "none"
+    COMMAND_INPUT = "output"
+    COMMAND_OUTPUT = "input"
+    HELP = "help"
+    ERROR = "error"
+    QUESTION = "question"
+    ANSWER = "answer"

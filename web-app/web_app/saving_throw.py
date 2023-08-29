@@ -20,6 +20,6 @@ def proc_saving_throw_cmd(cmd: str) -> TextLine:
             result_txt = f"roll={roll}, score={score}, result=\"success\""
         else:
             result_txt = f"roll={roll}, score={score}, result=\"failure\""
-        return TextLine(result_txt, TextType.COMMAND_OUTPUT)
+        return TextLine(result_txt, TextType.ANSWER.value)
     else:
         raise ValueError(f'unknown command "{cmd}"')

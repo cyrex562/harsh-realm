@@ -1,11 +1,12 @@
 from .dice import roll_dice
 import re
-from text_line import TextLine
-from text_type import TextType
+from .text_line import TextLine
+from . text_type import TextType
 
 
 def proc_skill_check_cmd(cmd: str) -> TextLine:
     # /roll skill check skill=10 difficulty=10 modifier=10
+    print(f"proc_skill_check_cmd: {cmd}")
     re1 = re.compile(r"skill\s*check\s*skill\s*=\s*(\d+)\s*difficulty\s*=\s*(\d+)\s*modifier\s*=\s*(\-?\d+)")
     re2 = re.compile(r"skill\s*check\s*skill\s*=\s*(\d+)\s*modifier\s*=\s*(\-?\d+)")
     re3 = re.compile(r"skill\s*check\s*skill\s*=\s*(\d+)\s*difficulty\s*=\s*(\d+)")
@@ -38,4 +39,4 @@ def proc_skill_check_cmd(cmd: str) -> TextLine:
         result_txt = f"roll={roll}, skill={skill}, difficulty={difficulty}, modifier={modifier}, result=\"success\""
     else:
         result_txt = f"roll={roll}, skill={skill}, difficulty={difficulty}, modifier={modifier}, result=\"failure\""
-    return TextLine(result_txt, TextType.COMMAND_OUTPUT)
+    return TextLine(result_txt, TextType.ANSWER.value)

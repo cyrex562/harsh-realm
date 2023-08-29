@@ -1,5 +1,5 @@
 from typing import Tuple
-from .dice import proc_roll_dice_cmd
+from .dice import roll_dice
 
 
 def calc_stat_dm(stat: int) -> int:
@@ -63,7 +63,7 @@ HEIGHT_MOD_TABLE = [
 
 def calc_height(strength: int) -> int:
     base_height = BASE_HEIGHT_TABLE[strength]
-    height_mod_roll = proc_roll_dice_cmd(3, 6, 0, "+")
+    height_mod_roll = roll_dice(3, 6, 0, "+")
     height_mod = HEIGHT_MOD_TABLE[height_mod_roll.total]
     return base_height + height_mod
 
@@ -134,7 +134,7 @@ MASS_MOD_TABLE = [
 def calc_mass(end: int, dex: int) -> int:
     base_mass = BASE_MASS_TABLE[end]
     mass_dex_mod = MASS_DEX_MOD_TABLE[dex]
-    mass_mod_roll = proc_roll_dice_cmd(3, 6, 3, "-")
+    mass_mod_roll = roll_dice(3, 6, 3, "-")
     mass_mod = MASS_MOD_TABLE[mass_mod_roll.total]
     return base_mass + mass_dex_mod + mass_mod
 
@@ -153,12 +153,12 @@ EYE_COLOR_TABLE = ["brown", "blue", "green", "hazel", "gray"]
 
 
 def gen_skin_tone() -> str:
-    skin_tone_roll = proc_roll_dice_cmd(1, 6, 0, "+")
+    skin_tone_roll = roll_dice(1, 6, 0, "+")
     return SKIN_TONE_TABLE[skin_tone_roll.total]
 
 
 def gen_hair_color() -> str:
-    hair_color_roll = proc_roll_dice_cmd(2, 6, 0, "+").total
+    hair_color_roll = roll_dice(2, 6, 0, "+").total
     if hair_color_roll >= 2 and hair_color_roll <= 5:
         return "black"
     elif hair_color_roll >= 6 and hair_color_roll <= 8:
@@ -168,7 +168,7 @@ def gen_hair_color() -> str:
 
 
 def gen_eye_color(hair_color: str) -> str:
-    eye_color_roll = proc_roll_dice_cmd(2, 6, 0, "+").total
+    eye_color_roll = roll_dice(2, 6, 0, "+").total
     if eye_color_roll >= 2 and eye_color_roll <= 4:
         if hair_color == "black":
             return "brown"
@@ -198,11 +198,11 @@ def gen_eye_color(hair_color: str) -> str:
         else:
             return "brown"
     else:
-        gray_roll = proc_roll_dice_cmd(2, 6, 0, "+")
+        gray_roll = roll_dice(2, 6, 0, "+")
         if gray_roll in range(2, 9):
-            left_roll = proc_roll_dice_cmd(1, 5, 0, "+").total
+            left_roll = roll_dice(1, 5, 0, "+").total
             left_color = EYE_COLOR_TABLE[left_roll]
-            right_roll = proc_roll_dice_cmd(1, 5, 0, "+").total
+            right_roll = roll_dice(1, 5, 0, "+").total
             right_color = EYE_COLOR_TABLE[right_roll]
             return f"{left_color}/{right_color}"
         elif gray_roll in range(10, 11):
@@ -343,29 +343,29 @@ class CharacterStats:
 
 
 def gen_character_stats() -> CharacterStats:
-    strength_roll = proc_roll_dice_cmd(3, 6, 0, "+")
+    strength_roll = roll_dice(3, 6, 0, "+")
     strength = strength_roll.total
     strength_dm = calc_stat_dm(strength)
 
-    dexterity_roll = proc_roll_dice_cmd(3, 6, 0, "+")
+    dexterity_roll = roll_dice(3, 6, 0, "+")
     dexterity = dexterity_roll.total
     dexterity_dm = calc_stat_dm(dexterity)
 
-    endurance_roll = proc_roll_dice_cmd(3, 6, 0, "+")
+    endurance_roll = roll_dice(3, 6, 0, "+")
     endurance = endurance_roll.total
     endurance_dm = calc_stat_dm(endurance)
 
-    intelligence_roll = proc_roll_dice_cmd(3, 6, 0, "+")
+    intelligence_roll = roll_dice(3, 6, 0, "+")
     intelligence = intelligence_roll.total
     intelligence_dm = calc_stat_dm(intelligence)
 
-    education_roll = proc_roll_dice_cmd(3, 6, 0, "+")
+    education_roll = roll_dice(3, 6, 0, "+")
     education = education_roll.total
     education_dm = calc_stat_dm(education)
 
     iq = intelligence + education
 
-    social_standing_roll = proc_roll_dice_cmd(3, 6, 0, "+")
+    social_standing_roll = roll_dice(3, 6, 0, "+")
     social_standing = social_standing_roll.total
     social_standing_dm = calc_stat_dm(social_standing)
 

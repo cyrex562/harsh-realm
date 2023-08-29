@@ -7,21 +7,15 @@ from .text_line import TextLine
 
 from .text_type import TextType
 from .command import process_command
-from .game_session import GameSession
+from .game_session import GameSession, SessionMessage
 
 
 def process_question(question: str) -> TextLine:
     """Process the question and return an answer."""
     if question.startswith("/"):
         raw_command = question[1:]
-        # if raw_command.startswith("help"):
-        #     return TextLine("Help", TextType.HELP)
-        # elif raw_command.startswith("roll"):
-        #     return proc_roll_dice_cmd(raw_command)
-        # elif raw_command.startswith("gen"):
-        #     return process_gen_command(raw_command)
         return process_command(raw_command)
-    return TextLine("I don't know", TextType.ERROR)
+    return TextLine("I don't know", TextType.ANSWER.value)
 
 
 class State(rx.State):
@@ -29,12 +23,36 @@ class State(rx.State):
 
     question: str = ""
     new_session_name: str = ""
-    chat_history: list[tuple[str, str]]
+    chat_history: list[TextLine]
     session_names: list[str]
     selected_session_name: str = ""
     game_sessions: list[GameSession] = []
     loaded_game_session: Optional[GameSession] = None
     loaded_session_name: str = "not loaded"
+    not_loaded_show: bool = False
+
+    @rx.var
+    def get_chat_history(self):
+        self.chat_history = []
+        print("get chat history")
+        if self.loaded_game_session is None:
+            return self.chat_history
+        with rx.session() as session:
+            messages = (
+                session.query(SessionMessage)
+                .filter(SessionMessage.game_session_id == self.loaded_game_session.id)
+                .all()
+            )
+            for msg in messages:
+                mtype = (
+                    TextType.QUESTION.value
+                    if msg.message_type == "question"
+                    else TextType.ANSWER.value
+                )
+
+                self.chat_history.append(TextLine(msg.message, mtype))
+            print(f"chat history={self.chat_history}")
+            return self.chat_history
 
     @rx.var
     def get_game_sessions(self):
@@ -50,10 +68,8 @@ class State(rx.State):
             self.session_names = [gs.name for gs in session.query(GameSession).all()]
             return self.session_names
 
-    # def get_loaded_session_name(self) -> str:
-    #     if self.selected_game_session is None:
-    #         return "not loaded"
-    #     return self.selected_game_session.name
+    def not_loaded_toggle(self):
+        self.not_loaded_show = not self.not_loaded_show
 
     def get_gsession_by_name(self):
         print("get session by name")
@@ -66,11 +82,54 @@ class State(rx.State):
             return gs
 
     def answer(self):
+        if self.loaded_game_session is None:
+            print("No session loaded")
+            self.not_loaded_show = True
+            return
+        print(f"answering query: {self.question}")
         # process question
         answer_text_line = process_question(self.question)
         print(f'answer_text_line: "{answer_text_line}"')
-        answer = answer_text_line.text
-        self.chat_history.append((self.question, answer))
+        question_text_line = TextLine(self.question, TextType.QUESTION.value)
+
+        with rx.session() as session:
+            session.add(
+                SessionMessage(
+                    message=self.question,
+                    message_type="question",
+                    game_session_id=self.loaded_game_session.id,
+                )
+            )
+            session.add(
+                SessionMessage(
+                    message=answer_text_line.text,
+                    message_type="answer",
+                    game_session_id=self.loaded_game_session.id,
+                )
+            )
+            session.commit()
+            self.loaded_game_session = (
+                session.query(GameSession)
+                .filter(GameSession.name == self.loaded_game_session.name)
+                .first()
+            )
+            messages = (
+                session.query(SessionMessage)
+                .filter(SessionMessage.game_session_id == self.loaded_game_session.id)
+                .all()
+            )
+            for msg in messages:
+                mtype = (
+                    TextType.QUESTION.value
+                    if msg.message_type == "question"
+                    else TextType.ANSWER.value
+                )
+
+                self.chat_history.append(TextLine(msg.message, mtype))
+            print(f"chat history={self.chat_history}")
+            # return self.chat_history
+        
+
 
     def add_game_session(self):
         print(f"add_session: {self.new_session_name}")
@@ -92,6 +151,24 @@ class State(rx.State):
                 .first()
             )
             self.loaded_session_name = self.loaded_game_session.name
+            # update chat history
+            print("get chat history")
+            self.chat_history = []
+            messages = (
+                session.query(SessionMessage)
+                .filter(SessionMessage.game_session_id == self.loaded_game_session.id)
+                .all()
+            )
+            for msg in messages:
+                self.chat_history.append(
+                    TextLine(
+                        msg.message,
+                        TextType.QUESTION.value
+                        if msg.message_type == "question"
+                        else TextType.ANSWER.value,
+                    )
+                )
+
         print(f"loaded session: {self.loaded_session_name}")
 
     def delete_selected_session(self):
@@ -109,11 +186,19 @@ class State(rx.State):
         self.loaded_game_session = None
 
 
-def qa(question: str, answer: str) -> rx.Component:
-    return rx.box(
-        rx.box(question, text_align="right"),
-        rx.box(answer, text_align="left", whitespace="break-spaces"),
-        margin_y="1em",
+# def qa(question: str, answer: str) -> rx.Component:
+#     return rx.box(
+#         rx.box(question, text_align="right"),
+#         rx.box(answer, text_align="left", whitespace="break-spaces"),
+#         margin_y="1em",
+#     )
+
+
+def render_chat_msg(msg: TextLine) -> rx.Component:
+    return rx.cond(
+        msg.text_type == "question",
+        rx.box(msg.text, text_align="left", margin_y="0.5em", bg="lightgreen"),
+        rx.box(msg.text, text_align="right", margin_y="0.5em", bg="lightblue"),
     )
 
 
@@ -126,10 +211,24 @@ def action_bar() -> rx.Component:
 
 def chat() -> rx.Component:
     return rx.box(
-        rx.foreach(
-            State.chat_history,
-            lambda messages: qa(messages[0], messages[1]),
-        )
+        rx.foreach(State.chat_history, render_chat_msg),
+        rx.alert_dialog(
+            rx.alert_dialog_overlay(
+                rx.alert_dialog_content(
+                    rx.alert_dialog_header("No Session Loaded"),
+                    rx.alert_dialog_body(
+                        "Please load a session before sending messages."
+                    ),
+                    rx.alert_dialog_footer(
+                        rx.button(
+                            "Ok",
+                            on_click=State.not_loaded_toggle,
+                        )
+                    ),
+                )
+            ),
+            is_open=State.not_loaded_show,
+        ),
     )
 
 

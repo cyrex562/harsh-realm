@@ -3,7 +3,7 @@ import { useRouter } from "next/router"
 import { E, getAllLocalStorageItems, getRefValue, getRefValues, isTrue, preventDefault, refs, set_val, uploadFiles, useEventLoop } from "/utils/state"
 import { EventLoopContext, StateContext } from "/utils/context.js"
 import "focus-visible/dist/focus-visible"
-import { Box, Button, Container, HStack, Input, option, Select, Text, useColorMode } from "@chakra-ui/react"
+import { AlertDialog, AlertDialogBody, AlertDialogContent, AlertDialogFooter, AlertDialogHeader, AlertDialogOverlay, Box, Button, Container, HStack, Input, option, Select, Text, useColorMode } from "@chakra-ui/react"
 import NextHead from "next/head"
 
 
@@ -37,16 +37,40 @@ export default function Component() {
   <Fragment><Fragment>
   <Container>
   <Box>
-  {state.chat_history.map((yrmqslun, i) => (
-  <Box key={i} sx={{"marginY": "1em"}}>
-  <Box sx={{"textAlign": "right"}}>
-  {yrmqslun.at(0)}
+  {state.chat_history.map((hxfxmjik, i) => (
+  <Fragment key={i}>
+  {isTrue((hxfxmjik.text_type === "question")) ? (
+  <Fragment>
+  <Box sx={{"textAlign": "left", "marginY": "0.5em", "bg": "lightgreen"}}>
+  {hxfxmjik.text}
 </Box>
-  <Box sx={{"textAlign": "left", "whitespace": "break-spaces"}}>
-  {yrmqslun.at(1)}
+</Fragment>
+) : (
+  <Fragment>
+  <Box sx={{"textAlign": "right", "marginY": "0.5em", "bg": "lightblue"}}>
+  {hxfxmjik.text}
 </Box>
-</Box>
+</Fragment>
+)}
+</Fragment>
 ))}
+  <AlertDialog isOpen={state.not_loaded_show}>
+  <AlertDialogOverlay>
+  <AlertDialogContent>
+  <AlertDialogHeader>
+  {`No Session Loaded`}
+</AlertDialogHeader>
+  <AlertDialogBody>
+  {`Please load a session before sending messages.`}
+</AlertDialogBody>
+  <AlertDialogFooter>
+  <Button onClick={_e => Event([E("state.not_loaded_toggle", {})], _e)}>
+  {`Ok`}
+</Button>
+</AlertDialogFooter>
+</AlertDialogContent>
+</AlertDialogOverlay>
+</AlertDialog>
 </Box>
   <HStack>
   <Input onBlur={_e => Event([E("state.set_question", {value:_e.target.value})], _e)} placeholder={`Type a message...`} type={`text`}/>
@@ -63,9 +87,9 @@ export default function Component() {
   {`New Session`}
 </Button>
   <Select onChange={_e => Event([E("state.set_selected_session_name", {value:_e.target.value})], _e)} placeholder={`select a session...`}>
-  {state.session_names.map((jarenfjt, i) => (
-  <option key={i} value={jarenfjt}>
-  {jarenfjt}
+  {state.session_names.map((klldnsdc, i) => (
+  <option key={i} value={klldnsdc}>
+  {klldnsdc}
 </option>
 ))}
 </Select>

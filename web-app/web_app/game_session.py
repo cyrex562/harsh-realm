@@ -13,5 +13,6 @@ class GameSession(rx.Model, table=True):
 class SessionMessage(rx.Model, table=True):
     id: int = Field(primary_key=True)
     message: str
+    message_type: str
     game_session_id: int = Field(foreign_key="gamesession.id")
     game_session: GameSession = Relationship(back_populates="messages")
