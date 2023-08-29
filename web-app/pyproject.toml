@@ -1,14 +1,14 @@
 [tool.poetry]
-name = "web-ui"
+name = "web-app"
 version = "0.1.0"
 description = ""
-authors = ["cyrex"]
+authors = ["cyrex562 <cyrex562@gmail.com>"]
 readme = "README.md"
-packages = [{include = "web_ui"}]
+packages = [{include = "web_app"}]
 
 [tool.poetry.dependencies]
-python = "^3.10"
-reflex = "^0.2.3"
+python = "^3.11"
+reflex = "^0.2.6"
 
 
 [build-system]
