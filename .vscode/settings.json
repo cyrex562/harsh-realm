@@ -1,0 +1,16 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "old-django-database",
+            "database": "C:\\Users\\cyrex\\Projects\\harsh-realm\\data\\db.sqlite3"
+        }
+    ],
+    "sqltools.useNodeRuntime": true,
+    "dotnet.defaultSolution": "disable",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "python.formatting.provider": "none"
+}

@@ -1,0 +1,128 @@
+id,dice_roll,reason
+1,1,characters are best friends
+2,2,Characters are cousins with long and close history.
+3,3,"Characters are cousins, though distant with little history."
+4,4,"Characters are half‐siblings, as close as two can be."
+5,5,"Characters are half‐siblings, never knowing each other until recently."
+6,6,"Characters are lovers but both are looking to ""trade up."""
+7,7,Characters are lovers.
+8,8,Characters are married.
+9,9,Characters are only distantly related to each other.
+10,10,Characters are parent‐child and deeply protective of one another.
+11,11,"Characters are parent‐child, with an over‐protective parent and a rebellious
+child."
+12,12,Characters are secretly in love with each other but pretend to just be friends.
+13,13,"Characters are sibling twins (50% chance of being identical if the same
+gender)."
+14,14,Characters are siblings and grew up together.
+15,15,"Characters are siblings, separated at childhood, now reunited."
+16,16,Characters are step‐siblings and grew up hating each other.
+17,17,"Characters are step‐siblings, and grew up closer than was considered
+""natural."""
+18,18,"Characters are step‐siblings, and grew up together as close as real siblings."
+19,19,"Characters are uncle/aunt and niece/nephew, and feel extremely responsible
+for each other."
+20,20,"Characters are uncle/aunt and niece/nephew, but close as parent and child."
+21,21,Characters are uncle/aunt and niece/nephew; resentful of each other.
+22,22,Characters both worship and serve the same deity or pantheon.
+23,23,"Characters don't like each other but grudgingly accept each other for their
+skills."
+24,24,"Characters each feel the other ""has his uses."""
+25,25,"Characters from the same city, hired out as caravan guards."
+26,26,Characters from the same dirty ghetto.
+27,27,Characters from the same small town.
+28,28,"Characters from the same, village/town and share a secret criminal past."
+29,29,"Characters got drunk together and hatched a plan to someday reign as two
+kings."
+30,30,Characters have a romantic relationship.
+31,31,"Characters have been hated rivals since childhood and want to show each
+other up."
+32,32,Characters have mutual respect for each other’s skills.
+33,32,Characters met each other in a game of chance.
+34,33,Characters met each other in the military.
+35,34,Characters met each other on the road. Joined forces for mutual protection.
+36,36,Characters met each other while praying at a temple/shrine.
+37,37,Characters met each other while robbing the same temple/shrine.
+38,38,Characters met each other while shopping for adventuring gear.
+39,39,"Characters met in a forest, both escaping eternal enslavement by fairy folk."
+40,40,"Characters met in a forest, both running from wild animals."
+41,41,"Characters met in a tavern, fought over the same woman (both lost)."
+42,42,"Characters met in a tavern, hired for the same adventure, which proved
+disastrous."
+43,43,"Characters met in a tavern, hired for the same adventure, which proved
+lucrative."
+44,44,"Characters met in a tavern, hired for the same job but double‐dealt by their
+employer."
+45,45,"Characters met in a tavern, over a fist fight."
+46,46,"Characters met in a tavern, over drinks."
+47,47,Characters met in a tavern; had a drinking contest and both lost.
+48,48,Characters met in a torrential downpour; sought shelter in the same cave.
+49,49,"Characters met in king's treasure chamber; both barely escaped with their
+lives."
+50,50,Characters met in prison after doing hard time.
+51,51,"Characters met in prison, busted out by mutual friend who died in escape."
+52,52,"Characters met in prison, escaped together."
+53,53,Characters met in school and love to play pranks on each other.
+54,54,"Characters met in school, hate each other, and secretly plot each other’s
+demise."
+55,55,"Characters met on a disastrous adventure, only survivors."
+56,56,"Characters met on a ship, both had hired passage together."
+57,57,"Characters met on a ship, both shanghaied from the same bar when drunk."
+58,58,"Characters met on a ship, both working for passage."
+59,59,"Characters met on an adventure, both deserted their party to a certain doom"
+60,60,"Characters met on an adventure, saved each other’s lives."
+61,61,"Characters met through a mutual acquaintance, who is currently imprisoned."
+62,62,"Characters met through a mutual friend, now deceased."
+63,63,"Characters met when each refused to yield right of way to the other and
+fought to a draw."
+64,64,"Characters met when one broke an enchantment that had been placed on the
+other."
+65,65,Characters met when one caught the other in an attempted swindle.
+66,66,Characters met when one caught the other picking his pocket.
+67,67,Characters met when one freed the other from durance vile.
+68,68,"Characters met when one ran the other down with his horse.
+"
+69,69,Characters met when one was down‐and‐out and the other sobered him up.
+70,70,"Characters met when one's house burned down and the other offered him a
+job."
+71,71,"Characters mysteriously bear a resemblance to each other, though not blood‐
+related."
+72,72,"Characters only survivors of a lost caravan that was forced to resort to
+cannibalism."
+73,73,Characters sent on quest together by the same deity.
+74,74,Characters sent on quest together by the same monarch.
+75,75,Characters served in the same mercenary company.
+76,76,Characters served the same monarch.
+77,77,"Characters share a secret psychic bond, and can hear each other’s thoughts."
+78,78,"Characters share a secret psychic bond, and feel each other’s pain and
+emotions."
+79,79,"Characters share a secret psychic bond, and know when each other is in
+danger"
+80,80,Characters shared the same horse for years until it died recently.
+81,81,"Characters trained together, though perhaps in different disciplines."
+82,82,"Characters were both in love with the same individual, now deceased."
+83,83,"Characters were both in love with the same individual, who spurned both."
+84,84,"Characters were both slaves together, escaped and are on the run."
+85,85,"Characters were both slaves together, slew their captors and never discuss
+past."
+86,86,"Characters were both slaves; one earned freedom and purchased it for the
+other."
+87,87,"Characters were engaged/betrothed, but one broke it off; they are still
+friends."
+88,88,"Characters were from the same town, only survivor of barbarian hordes."
+89,89,"Characters were from the same town, only survivors of the plague."
+90,90,Characters were hired muscle for a crime lord who turned on their master.
+91,91,"Characters were hired muscle for a tyrant who turned on them; now on the
+run."
+92,92,"Characters were lovers, and are still secretly in love with each other."
+93,93,"Characters were lovers, but betrayal leads one to hate the other."
+94,94,"Characters were lovers, but briefly, and find each other's social habits
+annoying."
+95,95,"Characters were lovers, now only friends."
+96,96,"Characters were married, now divorced; they still find it useful to travel
+together."
+97,97,"Characters were originally (paid) henchman and master; now friends and
+peers."
+98,98,"Characters were originally hunter and prey, now friends and peers."
+99,99,Characters worked together on the same farm/ranch.
+100,100,"Characters worked together, apprenticed to the same master."

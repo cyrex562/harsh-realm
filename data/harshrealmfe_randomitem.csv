@@ -1,0 +1,207 @@
+id,dice_roll,place,item
+1,1,car,Pine air freshener
+3,2,car,Motor oil (1 quart)
+4,3,car,1D6 five dollar bills
+5,4,car,GPS
+6,5,car,jumpdrive
+7,6,car,Tennis racket
+8,7,car,soda bottle (half-full)
+9,8,car,Medication (roll once on medication table)
+10,9,car,Keys
+11,10,car,Folder of documents
+12,11,car,Hazard Triangle
+13,12,car,Fire extinguisher
+14,13,car,First Aid Kit
+15,14,car,Cardboard box (empty)
+16,15,car,Dress shoes
+17,16,car,Pennies (1D100)
+18,17,car,Dollar bills (1D4)
+19,18,car,Blanket
+20,19,car,DVDs (1D4)
+21,20,car,Junk mail
+22,21,car,Dollar bill
+23,22,car,Pliers
+24,23,car,Tow strap
+25,24,car,fast food wrapper
+26,25,car,Chewing gum (1 pack)
+27,26,car,Road map
+28,27,car,tire pressure gauge
+29,28,car,passport (Pakistan)
+30,29,car,Lip balm 
+31,30,car,Tennis shoes
+32,31,car,Road flares (1D4)
+33,32,car,Windshield sunshade
+34,33,car,Notepad (50 pages)
+35,34,car,Owner's manual 
+36,35,car,tire jack
+37,36,car,Nickels (1D20)
+38,37,car,Napkins (4)
+39,38,car,Coffee cup
+40,39,car,Protein bar
+41,40,car,Earmuffs
+42,41,car,Jacket
+43,42,car,Screwdriver
+44,43,car,Books (roll 1d4 on one of the book tables
+45,44,car,hairbrush
+46,45,car,lipstick
+47,46,car,towel
+48,47,car,sunglasses
+49,48,car,pen
+50,49,car,candybar
+51,50,car,quarters (1D20)
+52,51,car,handgun
+53,52,car,iPad
+54,53,car,gloves
+55,54,car,fix-a-flat (1 can)
+56,55,car,soda bottle (empty)
+57,56,car,hand air pump
+58,57,car,road flare (1)
+59,58,car,CDs (1D12)
+60,59,car,Medication (roll on med table)
+61,60,car,facial tissues (half a box)
+62,61,car,passport (USA)
+63,62,car,baseball bat
+64,63,car,rag
+65,64,car,socks
+66,65,car,water bottle (empty)
+67,66,car,winter coat
+68,67,car,book (roll on one of the book tables)
+69,68,car,phone charger
+70,69,car,spare tire
+71,70,car,quarters (1D4)
+72,71,car,string (3 feet)
+73,72,car,duct tape (1 roll)
+74,73,car,adjustable wrench
+75,74,car,multitool
+76,75,car,antifreeze (1 gal)
+77,76,car,shopping bag
+79,77,car,comb
+80,78,car,flashlight
+81,79,car,laptop
+82,80,car,ice scraper
+83,81,car,Raincoat
+84,82,car,Umbrella
+85,83,car,Scarf
+86,84,car,Twenty Dollar Bills (1D4)
+87,85,car,Diamond ring
+88,86,car,Pants
+89,87,car,Pencil
+90,88,car,iPhone
+91,89,car,Seat Cover
+92,90,car,Dimes (1D10)
+93,91,car,Dime bag
+94,92,car,Beef Jerky (1 pack)
+95,93,car,Insurance Card
+96,94,car,Nail Polish
+97,95,car,Ten Dollar Bills (1D6)
+98,96,car,Shirt
+99,97,car,Straw wrapper
+100,98,car,Jumper cables
+101,99,car,Lug wrench 
+102,100,car,crackers (1 pack)
+103,1,grocery store,corona extra
+104,2,grocery store,spam
+105,3,grocery store,cake mix
+106,4,grocery store,eggs
+107,5,grocery store,popcorn (unpopped)
+108,6,grocery store,canned corn
+109,7,grocery store,miller lite
+110,8,grocery store,pepsi 
+111,9,grocery store,cooking oil
+112,10,grocery store,heath bar
+113,11,grocery store,mustard
+114,12,grocery store,payday bar
+115,13,grocery store,diet pepsi 
+116,14,grocery store,donuts
+117,15,grocery store,oranges
+118,16,grocery store,mountain dew
+119,17,grocery store,bread (sliced)
+120,18,grocery store,coffee
+121,19,grocery store,milk
+122,20,grocery store,pizza (frozen)
+123,21,grocery store,special K
+124,22,grocery store,Chicken noodle soup
+125,22,grocery store,chicken noodle soup
+126,23,grocery store,milky way bar
+127,24,grocery store,flour
+128,25,grocery store,ketchup
+129,26,grocery store,cornflakes
+130,27,grocery store,cheddar cheese
+131,28,grocery store,bananas
+132,29,grocery store,butter
+133,30,grocery store,red wine
+134,31,grocery store,ice cream sandwiches
+135,32,grocery store,butterfinger bar
+136,33,grocery store,bud light
+137,34,grocery store,potatoes
+138,35,grocery store,tea bags
+139,36,grocery store,pasta
+140,37,grocery store,frosted flakes
+141,38,grocery store,fudge graham cookies
+142,32,grocery store,butterfinger bar
+143,34,grocery store,potatoes
+144,35,grocery store,tea bags
+145,36,grocery store,pasta
+146,37,grocery store,frosted flask
+147,39,grocery store,oatmeal
+148,40,grocery store,canned chicken
+149,41,grocery store,popcorn (popped)
+150,42,grocery store,salt and vinegar potato chips
+151,43,grocery store,pepper
+152,44,grocery store,budweiser
+153,45,grocery store,corn (on the cob)
+154,46,grocery store,garlic
+155,47,grocery store,oreo cookies
+156,48,grocery store,breadcrumbs
+157,49,grocery store,limes
+158,50,grocery store,chocolate ice cream
+159,51,grocery store,natural light
+160,52,grocery store,snickers bar
+161,53,grocery store,chex mix
+162,54,grocery store,oatmeal cookies
+163,55,grocery store,salt
+164,56,grocery store,white wine
+165,57,grocery store,pretzels
+166,58,grocery store,cooking wine
+167,59,grocery store,cinnamon toast crunch
+168,60,grocery store,canned peas
+169,61,grocery store,lucky charms
+170,62,grocery store,potato chips
+171,63,grocery store,bologna
+172,64,grocery store,diet coke
+173,65,grocery store,pastrami
+174,66,grocery store,onions
+175,67,grocery store,captain crunch
+176,68,grocery store,pineapple (canned)
+177,69,grocery store,almonds
+178,70,grocery store,chips ahoy cookies
+179,71,grocery store,dr. pepper
+180,72,grocery store,peanuts
+181,73,grocery store,half and half
+182,74,grocery store,carrots
+183,75,grocery store,brownie mix
+184,76,grocery store,watermelons
+185,77,grocery store,bell peppers 
+186,78,grocery store,hotdog buns
+187,79,grocery store,twix bar
+188,80,grocery store,apples
+189,81,grocery store,paper plates
+190,82,grocery store,bread (unsliced)
+191,83,grocery store,hamburger buns
+192,84,grocery store,tomatoes
+193,85,grocery store,honey nut cheerios
+194,86,grocery store,kit kat (candy bar)
+195,87,grocery store,raisin bran
+196,88,grocery store,mozzarella cheese
+197,89,grocery store,BBQ potato chips
+198,90,grocery store,ramen noodles
+199,91,grocery store,fruit loops
+200,92,grocery store,baby ruth (candy bar)
+201,93,grocery store,dish soap
+202,94,grocery store,shrimp (frozen)
+203,95,grocery store,rice
+204,96,grocery store,colby jack cheese
+205,97,grocery store,vanilla ice cream
+206,98,grocery store,coca cola
+207,99,grocery store,pabst blue ribbon
+208,100,grocery store,coors light

@@ -1,0 +1,389 @@
+id,dice_roll,location,situation
+1,1,In a bar,"A man with a cybernetic arm
+playing pool and drinking beer."
+2,2,In a bar,"A crazy-eyed man selling illegal
+or defective implants."
+3,3,In a bar,"An old cop drinking away his
+dead teammates and infidel wife."
+4,4,In a bar,"A cyberspace addicted decker
+looking for any job."
+5,5,In a bar,"A well dressed man named
+Johnson offering a contract too
+good to be true."
+6,6,In a bar,"Dancing holograms of the latest
+fashionable pop idol."
+7,7,In a bar,"Cops violently arresting a man
+claiming to be innocent."
+8,8,In a bar,"Loud music making the place
+rather hard to spy on."
+9,9,In a bar,"A band of augmented punk girls
+trying to rob the place."
+10,10,In a bar,"A rich woman followed by her
+two impressive bodyguards."
+11,11,In a bar,"Bored mercenaries waiting to be
+contacted for their next contract."
+12,12,In a bar,"A desperate woman looking for
+info on her missing husband."
+13,13,In a bar,"A nervous scientist letting off
+steam after their shift."
+14,14,In a bar,"Young lads loudly laughing in a
+corner, unaware of the danger."
+15,15,In a bar,"The place is silent but people are
+dancing to music of their choice
+coming from their ear implant."
+16,16,In a bar,"A gang has “booked” the place for
+the birthday of their boss."
+17,17,In a bar,"A completely drunk person about
+to have their credits stolen."
+18,18,In a bar,"Salarymen having a drinking
+party to celebrate a contract."
+19,19,In a bar,"The place is trashed since a recent
+vendetta against the owner."
+20,20,In a bar,"A stealth chopper pilot reading
+their next mission order."
+21,1,in a poor district,"What remains of a man whose
+augmentations have been stolen."
+22,2,in a poor district,"A burning car with burnt bodies
+inside of it."
+23,3,in a poor district,"A knocked over trash can full of
+rotting body parts."
+24,4,in a poor district,"A shady augmentation clinic with
+cheap prices and poor hygiene."
+25,5,in a poor district,"A street samurai finishing off
+gang members assaulting a girl."
+26,6,in a poor district,"An emaciated junkie having a
+badtrip in the gutter."
+27,7,in a poor district,"A man living in a trailer, making
+a living of ID forgery."
+28,8,in a poor district,"A squat inhabited by a gang
+known for selling new drugs."
+29,9,in a poor district,"An abandoned and vandalized
+amusement park."
+30,10,in a poor district,"A credstick on the ground set up
+as a trap by local thugs."
+31,11,in a poor district,A flying robot scanning people ID looking for wanted criminals
+32,12,in a poor district,"A homeless guy, and his dog,
+dumpster diving for clothes."
+33,13,in a poor district,"A noodle shop used as a cover by
+yakuza for their weapon traffic."
+34,14,in a poor district,"A crime scene being investigated
+by polices officers and a detective."
+35,15,in a poor district,"Stranges fumes coming out the
+drains of this street."
+36,16,in a poor district,"Tags on the walls tags marking
+the street's belonging to a gang."
+37,17,in a poor district,"People wearing black clothes
+running and jumping from roof
+to roof, guilty of some crime."
+38,18,in a poor district,"Red neons showing the entrance
+of an exotic massage salon."
+39,19,in a poor district,"An apartment building made of
+stacked containers."
+40,20,in a poor district,"Dried blood splatters and empty
+shells can be seen on the ground."
+41,1,industrial district,"A damaged tank leaking its
+contents in the sewers."
+42,2,industrial district,"Air is hardly breathable without
+an adapted mask."
+43,3,industrial district,"Containers being forced open by
+an armed and dangerous squad."
+44,4,industrial district,"An incineration plant being used
+by corporations to make bodies
+disappear."
+45,5,industrial district,someone jacking themselves in to the network of a water distribution plant
+46,6,industrial district,A place often used for questionable transactions
+47,7,industrial district,An illegal car race taking place between two refineries
+48,8,industrial district,A man who's just been shot bleeding on the ground
+49,9,industrial district,Workers on strike being menaced by armed corporate guards
+50,10,industrial district,A man carrying huge crates with the help of an exoskeleton
+51,11,industrial district,people evacuating a building with a ringing fire alarm
+52,12,industrial district,a car crashes into a truck transporting clothes to a shop
+53,13,industrial district,the power grid in the area is hacked and the the lights go out
+54,14,industrial district,Eco-terrorists plotting to  blow up the district
+55,15,industrial district,A homeless person asks the party for something to eat
+56,16,industrial district,an abandoned warehouse used for illegal rave parties
+57,17,industrial district,a soft drink factory explodes; the responsible party was paid by a rival corp
+58,18,industrial district,Tourists whose GPS has been hacked asking for directions
+59,19,industrial district,A modified dog barking at anyone passing by the front of a suspicious fenced-off building
+60,20,industrial district,An armored van displaying gang colors patrolling the area
+61,1,sewers,Foul smelling water falls from a hole in the ceiling
+62,2,sewers,"Four mutated turtles and a rat
+eating what remains of a pizza."
+63,3,sewers,"A rotting half-devoured body tied
+to a wall."
+64,4,sewers,"Druggies are tripping, almost
+naked, on dirty mattresses."
+65,5,sewers,"A sturdy door with a retinal
+scanner blocks the access to a
+vault containing weapons."
+66,6,sewers,"This part of the sewer is trapped
+by laser-activated turrets."
+67,7,sewers,"A shantytown constructed by
+homeless people."
+68,8,sewers,"A crate full of empty alcohol
+bottles."
+69,9,sewers,"A brick sticking out of a wall,
+hiding a bag of filled syringes."
+70,10,sewers,"An urchin starts following the
+PCs and imitating them."
+71,11,sewers,"Alligators hiding in the sewage,
+waiting for an opening to strike."
+72,12,sewers,This part of the sewers is flooded.
+73,13,sewers,"A voice coming out of speakers
+ordering the party to turn back."
+74,14,sewers,"Lots of worrying red little eyes
+shining in the dark."
+75,15,sewers,"A padlocked door leading to the
+metro tunnels."
+76,16,sewers,a hooded man selling rats on a stick and other delicacies
+77,17,sewers,"A lost drunk man needs help to
+go back to his house."
+78,18,sewers,"Some kind of sect performing the
+initiation of new members."
+79,19,sewers,"Vermin exterminators angry at
+whoever “makes too much noise
+and makes the rats hide”."
+80,20,sewers,"The water starts moving fast
+because of a nearby waterfall."
+81,1,rich district,"A man getting kicked out of a
+private club by a bouncer."
+82,2,rich district,"A combat robot patrolling the
+area, ready to pacify any danger."
+83,3,rich district,"An impressive number of people
+waiting in front of a nightclub."
+84,4,rich district,"Someone in the party is mistaken
+for a famous idol and hysterical
+fans start running after them."
+85,5,rich district,"Someone throws trash on the
+ground and a robot instantly
+comes out of nowhere to clean it."
+86,6,rich district,"Augmented cops are patrolling
+the area, relaxed."
+87,7,rich district,"Cameras can be spotted in every
+corner of this place."
+88,8,rich district,"A robotic hostess inviting
+passerby in a maid cafe."
+89,9,rich district,"Ads for the latest fad can be seen
+on every screen in the street."
+90,10,rich district,"Someone approaches one of the
+PCs to ask them their number."
+91,11,rich district,"A woman walking down the
+street with her four arms full of
+shopping bags."
+92,12,rich,"A dead end full of cats that seem
+to be attracted by something."
+93,13,rich district,"Metal detectors ensuring that
+nobody enters the area armed."
+94,14,rich district,"A private detective agency
+conveniently located near a bar."
+95,15,rich district,"Someone hailing a cab which
+ends up ignoring them."
+96,16,rich district,"The sector is locked because of an
+android that has gone rogue."
+97,17,rich district,"The streets are empty because the
+martial law has been declared."
+98,18,rich district,"A new augmentation clinic is
+being built by nanobots.
+martial law has been declared."
+99,19,rich district,"People talking of the upcoming
+visit of the Techno-PopeTM."
+100,20,rich district,"A famous actor gets out of their
+luxurious car, accompanied by
+lots of escorts and bodyguards."
+101,1,mall,a lost child crying for their mom
+102,2,mall,an attractive stand selling soy milk ice cream
+103,3,mall,an arcade full of classic video games; it is also the den of well known deck operator
+104,4,mall,a robot vacuum cleaner makes someone fall and spill their drink
+105,5,mall,two coffee shops of rival brands competing while they are actually owned by the same corp
+106,6,mall,a fast food restaurant closed over strong hygiene violations
+107,7,mall,a shop filled with customers because its having a huge sale
+108,8,mall,an underwater tunnel with sharks and manta rays swimming around
+109,9,mall,a home defense shop which was recently broken into
+110,10,mall,a shop selling synthetic pets and hardware to take care of them
+111,11,mall,teenagers getting in trouble while playing an augmented reality game
+112,12,mall, a man yelling at his employees for some petty reason
+113,13,mall,an in-line skating gang going through the place in a flash
+114,14,mall,a group of gothic people hanging out near a fountain
+115,15,mall,a middle-aged man in a suit working at a cafe terrace
+116,16,mall,someone asking a passerby to sign their petition
+117,17,mall,the whole place is held hostage by an armed and modified gang
+118,18,mall,a dance contest where you can win fashionable clothes
+119,19,mall,a woman trying to make her two children stop crying
+120,20,mall,a rich young heir showing off their money
+121,1,capsule hotel,"A foul smell is coming from a
+capsule; it’s a rotting dead body."
+122,2,capsule hotel,"A “room” is secretly used as an
+item cache by mercenaries."
+123,3,capsule hotel,"A ran away teenager living by
+themselves."
+124,4,capsule hotel,"A man causing a ruckus trying to
+enter the women’s section."
+125,5,capsule hotel,"Corporate soldiers looking for
+people without an ID card."
+126,6,capsule hotel,"Kids running and jumping
+everywhere, playing tag."
+127,7,capsule hotel,"A woman is crying because she’s
+stuck here for a whole month."
+128,8,capsule hotel,"The place has no vacancies
+because public transportation
+services are shut down."
+129,9,capsule hotel,"A family of three has no choice
+but to live in an only capsule."
+130,10,capsule hotel,"This place was built inside an old
+private atomic bunker."
+131,11,capsule hotel,"The building is quarantined and
+people wear masks because of an
+outbreak of a contagious disease."
+132,12,capsule hotel,"An old lady owns the place and
+makes sure the place is very clean."
+133,13,capsule hotel,"Strict weapon controls are done
+since the last incident."
+134,14,capsule hotel,"Someone is searching something
+important that he lost."
+135,15,capsule hotel,"The PCs are invited by a cute girl
+to a rave party on the docks."
+136,16,capsule hotel,"A couple having a
+ heated
+discussion about fidelity."
+137,17,capsule hotel,"From a small window, someone
+is throwing things out."
+138,18,capsule hotel,"Drunk students, who missed the
+last train, trying to rent rooms."
+139,19,capsule hotel,"Tired paramedics evacuating a
+convulsing and drooling person."
+140,20,capsule hotel,"A repairman trying to fix the
+ventilation system using his
+multitool arm."
+141,1,on the roofs,"Some mercenaries are chasing the
+person they have to capture."
+142,2,on the roofs,"A reflection alerts the PCs of an
+ambushed shooter on a roof."
+143,3,on the roofs,"A man jumps between the top of
+two skyscrapers, defying gravity."
+144,4,on  the roofs,"A powerful telescope can be used
+to observe a spatial station."
+145,5,on the roofs,"Smog so thick you have to be
+careful where you step foot."
+146,6,on the roofs,"A modified man jumps off the
+roof to land on a moving metro."
+147,7,on the roofs,"From here, the name of the
+megacorp which bought the
+Moon can be read on its surface."
+148,8,on the roofs,Clothes drying on a washing line.
+149,9,on the roofs,"A woman sitting on the edge of
+the roof, lost in her thoughts."
+150,10,on the roofs,"A decker jacked to his console
+and unaware of the real world."
+151,11,on the roofs,"An in-line skating gang tagging
+their symbol before going away
+while doing sick tricks."
+152,12,on the roofs,"A container arranged as a stealthy
+operation base by mercenaries."
+153,13,0n the roofs,"A tied man about to be beheaded
+by a street samurai."
+154,14,on the roofs,"A stealthy shopper taking off
+after dropping its passenger."
+155,15,on the roofs,"A penthouse has a huge breach of
+security due to an air vent."
+156,16,on the roofs,"An urban ninja doing their usual
+parkour and strength training."
+157,17,on the roofs,"Solar panels covering
+ every
+centimeter of this roof."
+158,18,on the roofs,"Someone spying on their crush
+with the use of a drone."
+159,19,on the roofs,"Geodesic metal structures made
+by a trending street artist."
+160,20,on the roofs,"A lush garden maintained by
+monks to feed their monastery."
+161,1,cyberspace,A blinking ghost calling for help.
+162,2,cyberspace,"Popup ads circling the party
+which has to fight its way out."
+163,3,cyberspace,"Glitches making it very difficult
+to move between nodes."
+164,4,cyberspace,a data cluster worth a pile of credits if sold to the right person
+165,5,cyberspace,"A playful AI following and
+making jokes to curious deckers."
+166,6,cyberspace,"A trap forcing people to play a
+chess game where the winner
+gets to keep their life."
+167,7,cyberspace,"A virus infecting augmentations
+of uninvited visitors."
+168,8,cyberspace,"Another decker is trying to force
+this security lock."
+169,9,cyberspace,"A security software taking the
+appearance of a dragon."
+170,10,cyberspace,"This part of the cyberspace is
+maze-like; one should be careful
+not to have his mind trapped."
+171,11,cyberspace,"For a few seconds, the flow of
+data stops completely."
+172,12,cyberspace,"The Cyberspace here is hugely
+stylized to reflect a culture."
+173,13,cyberspace,"A virtual fortress built by little
+geniuses to protect them against
+the corporate world."
+174,14,cyberspace,"Rumors circulating about the real
+identity of an idol."
+175,15,cyberspace,"A severe bug preventing people
+to disconnect or even connect."
+176,16,cyberspace,"To access sensitive data, one has
+to win a neon colored bike race."
+177,17,cyberspace,"A digital life form has developed
+and lives in the Cyberspace."
+178,18,cyberspace,"Pictures of a famous singer, as
+well as his songs, seem to appear
+everywhere and on everything."
+179,19,cyberspace,"Another user tries to start up a
+scam involving a Ponzi scheme."
+180,20,cyberspace,"A shrine has been modelized by
+fanatics of a particular idol."
+181,1,megacorp hq,"Remains of a secret cloning
+program which ended badly."
+182,2,megacorp hq,"A room full of shaved people all
+linked to a supercomputer."
+183,3,megacorp hq,"Elite
+ corporation
+ soldiers
+equipped with cutting edge
+augmentations and weaponry."
+184,4,megacorp hq,"A flood of interchangeable suit
+wearing employees."
+185,5,megacorp hq,"Lifts have stopped working and
+stairs must be used."
+186,6,megacorp hq,"The CEO of the corp doing a
+motivational speech on screens."
+187,7,megacorp hq,"Old archives dating from the time
+people still used paper."
+188,8,megacorp hq,"Servers of the corporation, with
+many direct access points."
+189,9,megacorp hq,"A room only containing a
+computer in which someone
+downloaded their mind."
+190,10,megacorp hq,"An area where communications
+with the outside world are
+impossible because of jamming."
+191,11,megacorp hq,"A museum sheltering old video
+games and computers."
+192,12,megacorp hq,"A cryogenic chamber where are
+kept brilliant corporate minds."
+193,13,megacorp hq,"A tied journalist crew being
+interrogated by corporate guards."
+194,14,megacorp hq,"A man who was plotting to go to
+another corporation is leaving in
+multiple garbage bags."
+195,15,megacorp hq,"The building is under alert and all
+doors are locked because of a
+possible intrusion."
+196,16,megacorp hq,"Mercenaries infiltrating the place
+badly disguised as cleaning ladies."
+197,17,megacorp hq,"A propaganda clip being shot to
+boast the merits of the corp."
+198,18,megacorp hq,"All coffee machines are broken
+and employees are experiencing
+severe withdrawal symptoms."
+199,19,megacorp hq,"An employee is being escorted to
+take “early retirement”."
+200,20,megacorp hq,"A party is organised by the CEO
+to celebrate the purchase of a
+rival corporation."

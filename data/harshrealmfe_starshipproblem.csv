@@ -1,0 +1,104 @@
+id,dice_roll,description
+1,1,A blockage in the supply leading to the engine is limiting the flow of fuel and the engine's performance is lower than usual
+2,2,A burning smell permeates the ship
+3,3,A cable has broken somewhere inside one of the ducts and proves hard to locate
+4,4,A computer system fries and needs replacing
+5,5,A constant quiet rattling noise can be heard in many parts of the ship
+6,6,A crewmember has killed themselves for some reason
+7,7,A high-pitched humming sound permeates the ship at the edge of hearing
+8,8,A ladder breaks with one of the rungs snapping
+9,9,A minor explosion damages part of the ship
+10,10,A number of petty thefts have happened aboard the ship
+11,11,A ramp buckles as its being opened or closed
+12,12,A small fire breaks out in the galley due to an electrical short in the cooker
+13,13,"A virus has infected on of the computer systems, causing it to stop working"
+14,14,A weapon system overloads and causes enough damage to render it unusable until repaired
+15,15,Acid leaks from a ship's system and damages deck plating
+16,16,Air pressure is building up inside the ship due to a problem with atmospheric monitors
+17,17,All lights aboard the ship suddenly go out
+18,18,An accident occurs in the ship's armory damaging equipment stored there
+19,19,an automated mechanism fails and punches a hole an interior bulkhead
+20,20,An automatic hatch keeps opening and closing randomly
+21,21,An electrical short has gone unnoticed for some time causing several systems to malfunction
+22,22,An exterior hatch jams and cant be opened
+23,23,An irritating high pitched whie can be heard on the bridge
+24,24,Cargo containers or supplies improperly stored come loose during a maneuver damaging part of the ship
+25,25,Circuit breakers trip in a number of systems after they are affected by power surges
+26,26,Circuits in some of the ship systems have turned into sand
+27,27,"Coolant is leaking into the engine compartment filling it with unsafe fumes
+"
+28,28,"Crossed and mixed connections are occuring in the communications system, sometimes causing embarrassing situations"
+29,29, Displays on the bridge are showing meaningless garbage
+30,30,"Drugs are missing from the sickbay, apparently stolen for recreational use or sale"
+31,31,There is a problem with the engine that is causing it to be less efficient and use more fuel.
+32,32,"The fans in the air system are not working properly. They are slowing down and speeding up, which is causing the air to circulate unevenly."
+33,33,Floor plating in one of the corridors breaks
+34,34,Food has been contaminated with a bacterium making everyone who ate it sick
+35,35,Fungal spores have got into the ship's ventilation and are growing in the ducts. The spores themselves are hazardous to inhale
+36,36,Gas from an intruder defence mechanism releases itself into the ship's atmosphere
+37,37,"Gravity levels throughout the ship keep shifting, making the crew queasy"
+38,38,Hydraulics used to open a door hatch or ramp jam and need freeing
+39,39,In one part of the ship the steel has become rusty
+40,40,In the small craft bay a vehicle breaks free of its restraints during a maneuver and crashes into the bulkhead
+41,41,Insects or other small creatures got onboard the ship at one of the stops and are now causing numerous problems
+42,42,INsulation covering various important connections has disintegrated
+43,43,Items that are contraband at the next destination are found aboard ship and the ship needs inspection for more
+44,44,lubricant keeps leaking into a corridor and poses a slipping hazard
+45,45,Most of the food stores has either been eaten or become rotten. The only things left are barely edible ration packs
+46,46,One of the airlocks has a faulty seal causing air to be lost through it
+47,47,One of the communications arrays on the ship's hull malfunctions
+48,48,One of the crew is afflicted with space madness and starts behaving erractically
+49,49,One of the exterior hatches sticks open
+50,50,One of the fuel tanks has developed a leak and is venting into space
+51,51,"One of the lifts jams between decks, requiring repairs to move again"
+52,52,One of the maneuvering jets fires causing the ship's position to change
+53,53,One of the robts starts to malfunction
+54,54,One of the ships expert systems starts to behave erratically
+55,55,One of the ship's weapons activates and starts randomly firing
+56,56,Part of the hull plating has been damaged and comes loose
+57,57,persistent and hard to eradicate mould keeps growing in the corners of the ship's surfaces
+58,58,Potentially hazardous levels of static electricity build up in the ship's atmosphere
+59,58,Potentially hazardous levels of static electricity build up in the ship's atmosphere
+60,59,Power systems across the ship experience fluctuations
+61,60,Radiation protection has failed and radition is leaking into some cabins
+62,61,Several space suits are damaged and unusable for space work until they are repaired
+63,62,several spare parts that are need are found to be broken
+64,63,cargo in the cargo bay turns out to be dangerous
+65,64,"some of the crew have a still for making alcohol, but the last batch turned out to be dangerous"
+66,65,Some of the equipment in sickbay is malfunctioning giving improper diagnosis and treatments
+67,66,"some of the metal in one of the corridors is suffering from a strange type of corrosion, weaking it"
+68,67,"Something small, perhaps a micrometeorite or microscopic black hole punches a hole in the ship"
+69,68,spores of a hallucenogenic mould have infected some of the food supply
+70,69,Steel components in one part of the ship have become magnetized
+71,70,the air vents keep emitting a nauseating stench
+72,71,the artificial gravity in part of the ship is fluctuating. 
+73,72,The cameras that display the ship's exterior break
+74,73,The CO2 scrubbers are failing and CO2 is building up in the ship's atmosphere
+75,734,the collision warning siren keeps going off even though there is nothing close to the vessel
+76,75,the communications systems start suffering from a lot of static and interference
+77,76,the computers memory storage suffers a fault and data is lost
+78,77,the cooker in the galley is malfunctioning 
+79,78,the database containing leisure materials  is corrupted
+80,79,The decompression alarm malfunctions
+81,80,the fire suppresion system activates when there are no fires
+82,81,heating and cooling in one part of the ship functions erratically
+83,82,hydroponics bay suffers a blight that kills many plants
+84,83,the intercom system malfunctions with volume at maximum  
+85,84,"the lights throughout the ship are painfully bright and cant be adjusted
+"
+86,85,the ships drive occaisonally functions erratically causing spurts of acceleration
+87,86,the ships navigation computer made a plotting error throwing the ship off-course
+88,87,the ship's recreational facility is malfunctioning
+89,88,the ship's shower's are workign very erratically
+90,89,The ship's stabilizers are malfunctioning
+91,90,The ship's transponder is broken
+92,91,The ship's water supply has become fouled and the water purifiers are struggling to clean it
+93,92,the sterilizing unit isnt working properly and items are coming out dirty
+94,93,the toilets back up and overflow
+95,94,"there's a problem with the displays on the bridge, flickering or not working at all"
+96,95,thick slime is growing inside one of the air vents
+97,96,tiny biting insects have got aboard
+98,97,two crewmembers have an argument that lands them in sick bay
+99,98,unusually high levels of radiation occur in the enge compartment
+100,99,various metal surfaces throughout the ship give off an electric discharge due to a short somewhere
+101,100,water leaks from one of the ships systems into the cabins

@@ -31,7 +31,10 @@ class State(rx.State):
     """The app state."""
 
     question: str = ""
+    new_session_name: str = ""
     chat_history: list[tuple[str, str]]
+    session_names: list[str]
+    selected_session_name: str = ""
 
     def answer(self):
         # process question
@@ -39,6 +42,18 @@ class State(rx.State):
         print(f"answer_text_line: \"{answer_text_line}\"")
         answer = answer_text_line.text
         self.chat_history.append((self.question, answer))
+    
+    def add_session(self):
+        print(f"add_session: {self.new_session_name}")
+        self.session_names.append(self.new_session_name)
+        
+    def load_selected_session(self):
+        print(f"load_selected_session: {self.selected_session_name}")
+    
+    def delete_selected_session(self):
+        print(f"delete_selected_session: {self.selected_session_name}")
+        self.session_names.remove(self.selected_session_name)
+        self.selected_session_name = ""
 
 
 def qa(question: str, answer: str) -> rx.Component:
@@ -63,10 +78,35 @@ def chat() -> rx.Component:
             lambda messages: qa(messages[0], messages[1]),
         )
     )
+    
+def session_mgr_ui() -> rx.Component:
+    return rx.box(
+        # text label
+        rx.text("Session Manager"),
+        # session name input for new
+        rx.input(placeholder="session name...", on_blur=State.set_new_session_name),
+        # add button
+        rx.button("New Session", on_click=State.add_session),
+        # dropdown list
+        rx.select(
+            State.session_names,
+            placeholder="select a session...",
+            on_change=State.set_selected_session_name,
+        ),
+        # load button
+        rx.button(
+            "Load Session",
+            on_click=State.load_selected_session,),
+        # delete button
+        rx.button(
+            "Delete Selected Session",
+            on_click=State.delete_selected_session,
+        )
+    )
 
 
 def index() -> rx.Component:
-    return rx.container(chat(), action_bar())
+    return rx.container(chat(), action_bar(), session_mgr_ui())
 
 
 # Add state and page to the app.
