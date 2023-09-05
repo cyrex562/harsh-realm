@@ -1,4 +1,4 @@
-from .combat import proc_attack_roll_cmd
+from .combat import proc_attack_roll_cmd, proc_initiative_roll_cmd
 from .skill_check import proc_skill_check_cmd
 from .saving_throw import proc_saving_throw_cmd
 from .text_type import TextType
@@ -28,6 +28,9 @@ def process_command(raw_command: str) -> TextLine:
         # roll attack throw
         elif roll_cmd.startswith("to hit"):
             return proc_attack_roll_cmd(roll_cmd)
+        # roll initiative
+        elif roll_cmd.startswith("initiative"):
+            return proc_initiative_roll_cmd(roll_cmd)
         # invalid roll command
         else:
             raise ValueError(f'unknown command "{raw_command}"')

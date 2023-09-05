@@ -37,18 +37,18 @@ export default function Component() {
   <Fragment><Fragment>
   <Container>
   <Box>
-  {state.chat_history.map((hxfxmjik, i) => (
+  {state.chat_history.map((ncnowptz, i) => (
   <Fragment key={i}>
-  {isTrue((hxfxmjik.text_type === "question")) ? (
+  {isTrue((ncnowptz.text_type === "question")) ? (
   <Fragment>
   <Box sx={{"textAlign": "left", "marginY": "0.5em", "bg": "lightgreen"}}>
-  {hxfxmjik.text}
+  {ncnowptz.text}
 </Box>
 </Fragment>
 ) : (
   <Fragment>
   <Box sx={{"textAlign": "right", "marginY": "0.5em", "bg": "lightblue"}}>
-  {hxfxmjik.text}
+  {ncnowptz.text}
 </Box>
 </Fragment>
 )}
@@ -87,9 +87,9 @@ export default function Component() {
   {`New Session`}
 </Button>
   <Select onChange={_e => Event([E("state.set_selected_session_name", {value:_e.target.value})], _e)} placeholder={`select a session...`}>
-  {state.session_names.map((klldnsdc, i) => (
-  <option key={i} value={klldnsdc}>
-  {klldnsdc}
+  {state.session_names.map((whdajhko, i) => (
+  <option key={i} value={whdajhko}>
+  {whdajhko}
 </option>
 ))}
 </Select>

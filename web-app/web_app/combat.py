@@ -19,7 +19,7 @@ def proc_attack_roll_cmd(cmd: str) -> TextLine:
     modifier = int(matches.group(3))
     target_ac = int(matches.group(4))
     roll = roll_dice(1, 20, 0, "+")
-    attack_score = roll + attack_bonus + skill + modifier
+    attack_score = roll.total + attack_bonus + skill + modifier
     if attack_score >= target_ac:
         result = "hit"
     else:
@@ -27,4 +27,18 @@ def proc_attack_roll_cmd(cmd: str) -> TextLine:
     return TextLine(
         f'atk bonus={attack_bonus}, skill={skill}, modifier={modifier}, roll={roll}, score={attack_score}, result="{result}"',
         TextType.ANSWER.value,
+    )
+
+def proc_initiative_roll_cmd(cmd: str) -> TextLine:
+    re1 = re.compile(
+        r"initiative\s*dex-mod=\s*(\d+)"
+    )
+    matches = re1.match(cmd)
+    if matches is None:
+        raise ValueError(f'unknown command "{cmd}"')
+    roll = roll_dice(1,8,0,"+")
+    dex_mod = int(matches.group(1))
+    initiative = roll.total + dex_mod
+    return TextLine(
+        f'roll={roll}, dex-mod={dex_mod}, initiative={initiative}',
     )
